@@ -2,11 +2,12 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   a {
-    color: #000;
+    color: #587686;
     text-decoration: none;
+	font-size: 1rem;
 
 		@media (max-width: 960px) {
-			color: ${({ theme }) => (theme === 'light' ? '#000' : '#fff')};
+			color: ${({ theme }) => (theme === 'light' ? '#587686' : '#fff')};
 		}
   }
 

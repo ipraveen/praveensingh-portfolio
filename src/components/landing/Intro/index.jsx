@@ -11,6 +11,9 @@ export const Intro = () => {
     return (
         <Wrapper>
             <Header />
+            <Container>
+                <h3 style={{color: 'orangered', textAlign: 'center'}}> [[ I am changing hosting platform, Not a right time to visit this site ]]</h3>
+            </Container>
             <IntroWrapper as={Container}>
                 <Details theme={theme}>
                     <h1>Praveen K. Singh</h1>
