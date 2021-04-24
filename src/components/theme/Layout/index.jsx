@@ -5,13 +5,13 @@ import { Global } from './styles';
 import './fonts.css';
 
 export const Layout = ({ children }) => {
-  const { theme } = useContext(ThemeContext);
+    const { theme } = useContext(ThemeContext);
 
-  return (
-    <>
-      <Global theme={theme} />
-      {children}
-      <Footer />
-    </>
-  );
+    return (
+        <>
+            <Global theme={theme} />
+            {children}
+            <Footer />
+        </>
+    );
 };

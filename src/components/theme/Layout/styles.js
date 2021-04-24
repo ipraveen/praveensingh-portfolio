@@ -5,6 +5,7 @@ export const Global = createGlobalStyle`
     font-family: 'Roboto', Helvetica, sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    background: #BFBCED;
 
     article,
     aside,
@@ -624,5 +625,22 @@ export const Global = createGlobalStyle`
         outline: none;
       }
     }
+
+
   }
+
+
+  .card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    color: #333;
+    transition: transform 0.2s ease-in;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
 `;
