@@ -1,22 +1,17 @@
 export const skills = [
     {
         type: 'Engineering Lead',
-        info: 'Something about Engineering Lead',
-        logo: '',
+        info: '7+ years of experience in leading teams.',
+        icon: ['fas', 'fa-users', 'fa-4x'],
     },
     {
         type: 'Frontend Engineer',
         info: 'Expertise in building web frontend in micro-ui architecture, using React, TypeScript and JavaScript',
-        logo: '',
+        icon: 'coffee',
     },
     {
         type: 'Backend Engineer',
         info: 'Expertise in building micro service on NodeJs platform',
-        logo: '',
-    },
-    {
-        type: 'Blogger',
-        info: 'Something about Blogs',
-        logo: '',
+        icon: 'fas fa-code fa-4x',
     },
 ];

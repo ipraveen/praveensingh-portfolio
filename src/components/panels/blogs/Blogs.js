@@ -21,7 +21,7 @@ export default () => {
 
     return (
         <Wrapper>
-            <div className="slider">
+            <ul className="slider">
                 {posts.map(({ title, content, link, thumbnail }) => {
                     return (
                         <li className="post card">
@@ -37,7 +37,7 @@ export default () => {
                         </li>
                     );
                 })}
-            </div>
+            </ul>
         </Wrapper>
     );
 };
