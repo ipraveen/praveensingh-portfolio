@@ -638,10 +638,12 @@ export const Global = createGlobalStyle`
     padding: 20px;
     margin: 10px;
     color: #333;
-    transition: transform 0.4s ease-in;
+    transition: transform 0.2s ease-in;
 
     &:hover {
-        transform: scale(1.1);
+        transform: scale(1.07);
+        box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
+        
     }
 }
 
@@ -684,5 +686,11 @@ export const Global = createGlobalStyle`
         background-color: #ef4b6c;
         transform: translateX(-50%);
     }
+}
+
+.center{
+  display: grid;
+    place-content: center;
+    width: 100%;
 }
 `;

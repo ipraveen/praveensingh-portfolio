@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
             display: flex;
             flex-direction: column;
 
-            span{
+            span {
                 color: gray;
             }
         }
@@ -33,14 +33,6 @@ export const Wrapper = styled.div`
                 margin-bottom: 0;
                 display: block;
             }
-
-            &:hover {
-                transform: scale(1.1);
-            }
-
-            // .fas {
-            //     color: #17d47f;
-            // }
 
             h3 {
                 margin-top: 20px;

@@ -9,6 +9,7 @@ module.exports = {
         title: config.defaultTitle,
         description: config.defaultDescription,
         author: config.author,
+        siteUrl: `https://praveensingh.tech`,
     },
     plugins: [
         'gatsby-plugin-react-helmet',
@@ -16,6 +17,7 @@ module.exports = {
         'gatsby-transformer-sharp',
         'gatsby-plugin-sharp',
         `gatsby-plugin-fontawesome-css`,
+        `gatsby-plugin-sitemap`,
         {
             resolve: 'gatsby-plugin-nprogress',
             options: {

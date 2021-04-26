@@ -7,17 +7,10 @@ export const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
 
-    .card {
-        background-color: #ffffff;
-        border-radius: 10px;
-        box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+    .post.card {
         padding: 0;
-        margin: 10px;
-        color: #333;
-        transition: transform 0.2s ease-in;
-
         &:hover {
-            transform: scale(1);
+            transform: scale(1.02);
         }
     }
     .header {
@@ -41,22 +34,28 @@ export const Wrapper = styled.div`
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
+        list-style: none;
     }
     .post {
         margin: 3rem 1rem;
-        width: 50%;
+        width: 30%;
         min-width: 300px;
         max-width: 600px;
         -webkit-box-shadow: 9px 9px 20px 0px rgba(0, 0, 0, 0.4);
         -moz-box-shadow: 9px 9px 20px 0px rgba(0, 0, 0, 0.4);
         box-shadow: 9px 9px 20px 0px rgba(0, 0, 0, 0.4);
     }
-    .topImg {
-        max-width: 100%;
-    }
     .content {
-        padding: 0.8rem;
-        position: relative;
+        padding: 1rem;
+
+        h2 {
+            color: #867670;
+            margin: 1rem 0;
+            margin-top: 0;
+        }
+        p {
+            color: #867670;
+        }
     }
     .preview {
         font-size: 0.95rem;

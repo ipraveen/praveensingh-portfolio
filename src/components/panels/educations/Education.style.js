@@ -11,7 +11,13 @@ export const Wrapper = styled.div`
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 280px;
+            height: 320px;
+        }
+
+        .item.card {
+            &:hover {
+                transform: scale(1.03);
+            }
         }
 
         h1,

@@ -2,34 +2,23 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
     display: flex;
-justify-content: center;
-
-    .item.card {
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    .item {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
         width: 250px;
         height: 200px;
 
         background: white;
         padding: 2rem;
         border-radius: 20px;
-        transition: transform 0.3s ease-in;
-
-        &:hover {
-            color: white;
-            transform: scale(1.1);
-            /* background-color: #8183c9;
-
-            h3,
-            p {
-                color: white;
-            } */
-        }
 
         h3 {
-            margin-top: 20px;
+            margin: 2rem 0;
             color: slategray;
             letter-spacing: 1.6px;
             text-transform: uppercase;
@@ -38,7 +27,9 @@ justify-content: center;
         }
 
         p {
+            margin-top: 2rem;
             color: gray;
+            text-align: center;
         }
     }
 `;
