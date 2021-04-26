@@ -1,8 +1,6 @@
 module.exports = {
     defaultTitle: 'Praveen Singh: A Full Stack JavaScript Engineer and Engineering Lead',
-    logo: 'https://portfolio.smakosh.com/favicon/favicon-512.png',
     author: 'Praveen Singh',
-    url: 'https://portfolio.smakosh.com',
     socialLinks: {
         twitter: 'https://twitter.com/i_praveensingh',
         github: 'https://github.com/ipraveen',
