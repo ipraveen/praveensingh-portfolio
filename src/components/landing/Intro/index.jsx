@@ -17,7 +17,7 @@ export const Intro = () => {
                     <h4>Full Stack JavaScript Engineer and Engineering Lead!</h4>
                 </Details>
                 <Thumbnail>
-                    <img src={dev} alt="I’m John and I’m a JAMStack engineer!" />
+                    <img src={dev} alt="Praveen Singh" />
                 </Thumbnail>
             </IntroWrapper>
         </Wrapper>
