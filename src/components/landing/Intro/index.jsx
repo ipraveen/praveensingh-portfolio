@@ -3,7 +3,7 @@ import { ThemeContext } from 'providers/ThemeProvider';
 import { Header } from 'components/theme';
 import { Container } from 'components/common';
 import dev from 'assets/images/praveen.png';
-import { Wrapper, IntroWrapper, Details, Thumbnail } from './styles';
+import { Wrapper, IntroWrapper, Details, Thumbnail, WhiteWave } from './styles';
 
 export const Intro = () => {
     const { theme } = useContext(ThemeContext);
@@ -20,6 +20,7 @@ export const Intro = () => {
                     <img src={dev} alt="Praveen Singh" />
                 </Thumbnail>
             </IntroWrapper>
+            <WhiteWave />
         </Wrapper>
     );
 };

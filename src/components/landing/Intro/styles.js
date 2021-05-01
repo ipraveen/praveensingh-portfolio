@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-    padding-bottom: 1rem;
-    margin-bottom: 4rem;
+position: relative;
+    padding-bottom: 8rem;
     background-size: contain;
     background-position: right top;
     background-repeat: no-repeat;
     background: #c1dcec;
+    background-image: radial-gradient(circle farthest-side at 50% 50%,#39abff,#253f6f);
 `;
 
 export const IntroWrapper = styled.div`
@@ -28,11 +29,12 @@ export const Details = styled.div`
         margin-bottom: 2rem;
     }
 
+
     h1 {
         margin-bottom: 2rem;
         font-size: 36pt;
-        color: ${({ theme }) => (theme === 'light' ? '#587686' : '#fff')};
-
+        color: ${({ theme }) => (theme === 'light' ? '#fff' : '#fff')};
+        animation: slideFromBottom 1s ease-in;
         @media (max-width: 960px) {
             mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
         }
@@ -46,7 +48,9 @@ export const Details = styled.div`
         margin-bottom: 2rem;
         font-size: 18pt;
         font-weight: normal;
-        color: ${({ theme }) => (theme === 'light' ? '#587686' : '#e6e6e6')};
+        color: ${({ theme }) => (theme === 'light' ? '#fff' : '#fff')};
+        animation: slideFromBottom 1s ease-in;
+
 
         @media (max-width: 960px) {
             mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
@@ -68,3 +72,18 @@ export const Thumbnail = styled.div`
         border-radius: 200px;
     }
 `;
+
+export const WhiteWave = styled.div`
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    height: 8vw;
+    margin-top: 0;
+    padding-top: 0;
+    background-image: url(images/waves-bottom.svg);
+    background-position: 50% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+ `

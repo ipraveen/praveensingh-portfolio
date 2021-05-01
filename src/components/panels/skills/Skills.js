@@ -7,8 +7,8 @@ import { skills } from './data';
 export default () => (
     <Container>
         <Wrapper>
-            {skills.map(({ type, info, icon }) => (
-                <div className="item card">
+            {skills.map(({ type, info, icon, animation }) => (
+                <div className={'item card ' + animation }>
                     <h3 className="title">{type}</h3>
                     <FontAwesomeIcon icon={icon} size="4x" />
                     <p className="intro">{info}</p>

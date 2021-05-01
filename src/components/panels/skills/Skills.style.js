@@ -32,4 +32,12 @@ export const Wrapper = styled.div`
             text-align: center;
         }
     }
+
+    .from-left{
+        animation: slideFromLeft 1s ease-in;
+    }
+
+    .from-right{
+        animation: slideFromRight 1s ease-in;
+    }
 `;
