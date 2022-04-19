@@ -13,7 +13,7 @@ export const Intro = () => {
             <Header />
             <IntroWrapper as={Container}>
                 <Details theme={theme}>
-                    <h1>Hi, I'm Praveen Singh</h1>
+                    <h1>Hi, I&apos;m Praveen Singh</h1>
                     <h4>Full Stack JavaScript Engineer and Engineering Lead!</h4>
                 </Details>
                 <Thumbnail>

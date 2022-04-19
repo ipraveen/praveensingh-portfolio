@@ -1,0 +1,12 @@
+.list {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--clr-gray-100);
+}
+
+.icon {
+    font-size: 3rem;
+}

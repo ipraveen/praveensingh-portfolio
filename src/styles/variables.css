@@ -1,0 +1,32 @@
+:root {
+    --clr-dark: 230 35% 7%;
+    --clr-light: 231 77% 90%;
+    --clr-white: 0 0% 100%;
+
+    --clr-yellow: #F5C32C;
+    --clr-orange : #FCA61F;
+    --clr-black : #242D49;
+    --clr-gray : #788097;
+    --clr-gray-100 : #d7d8db;
+    --clr-blueCard : #DDF8FE;
+    --clr-purple: rgb(238 210 255);
+    --clr-boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
+    --clr-orangeCard: rgba(252, 166, 31, 0.45);
+    --clr-smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+
+
+    /* font-sizes */
+    --fs-900: 9.375rem;
+    --fs-800: 6.25rem;
+    --fs-700: 3.5rem;
+    --fs-600: 2rem;
+    --fs-500: 1.75rem;
+    --fs-400: 1.125rem;
+    --fs-300: 1rem;
+    --fs-200: 0.875rem;
+
+    /* font-families */
+    --ff-serif: 'Gumela', serif;
+    --ff-sans-cond: 'Barlow Condensed', sans-serif;
+    --ff-sans-normal: 'Barlow', sans-serif;
+}

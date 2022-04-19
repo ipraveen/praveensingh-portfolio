@@ -1,0 +1,19 @@
+@import url('reset.css');
+@import url('variables.css');
+@import url('util.css');
+@import url('components.css');
+
+@font-face {
+    font-family: Gumela;
+    src: url('./fonts/Gumela Regular.otf');
+}
+body {
+    font-family: var(--ff-serif);
+    font-weight: normal;
+    font-size: 20px;
+    font-size: var(--fs-400);
+    line-height: 1.5;
+    /* color: hsl(var(--clr-white)); */
+    min-height: 100vh;
+    /* background-color: hsl(var(--clr-dark)) */
+}

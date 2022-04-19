@@ -1,0 +1,45 @@
+.intro-banner {
+    background: radial-gradient(55.36% 221.46% at 23.59% 28.54%, #037c8f 1.6%, #18616d 100%);
+    padding: 2rem 0;
+}
+
+.intro {
+    display: flex;
+    height: 40vh;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 1rem;
+    h3 {
+        margin-bottom: -2rem;
+    }
+
+    p {
+        font-weight: 100;
+        color: var(--clr-gray-100);
+        font-size: 1rem;
+    }
+}
+
+.avatar {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    > div {
+        height: 320px;
+        width: 320px;
+        border-radius: 320px;
+        > img {
+            height: 100%;
+            width: 100%;
+            border-radius: 100%;
+            object-fit: contain;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "name": "Github",
+        "link": "https://github.com/ipraveen",
+        "icon": "/icons/github.svg"
+    },
+    {
+        "id": 3,
+        "name": "Twitter",
+        "link": "https://twitter.com/i_praveensingh",
+        "icon": "/icons/twitter.svg"
+    }
+]
