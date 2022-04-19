@@ -12,7 +12,7 @@ const Navbar = () => {
         <Wrapper as={Container}>
             <Brand as={Link} to="/" theme={theme}>
                 <h1>
-                    PraveenSingh<span>.tech</span>
+                    praveensingh<span>.net</span>
                 </h1>
             </Brand>
             <NavbarLinks desktop />

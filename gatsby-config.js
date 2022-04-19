@@ -9,7 +9,7 @@ module.exports = {
         title: config.defaultTitle,
         description: config.defaultDescription,
         author: config.author,
-        siteUrl: `https://praveensingh.tech`,
+        siteUrl: `https://praveensingh.net`,
     },
     plugins: [
         'gatsby-plugin-react-helmet',

@@ -14,7 +14,7 @@ export const Intro = () => {
             <IntroWrapper as={Container}>
                 <Details theme={theme}>
                     <h1>Hi, I'm Praveen Singh</h1>
-                    <h4>Full Stack JavaScript Engineer and Engineering Lead!</h4>
+                    <p>I'm a full-stack JavaScript Engineer and Software Architect. I work as a Tech-Lead and have 15 years of professional development experience.</p>
                 </Details>
                 <Thumbnail>
                     <img src={dev} alt="Praveen Singh" />

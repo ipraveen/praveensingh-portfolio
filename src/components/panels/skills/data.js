@@ -3,19 +3,19 @@ import { faUsers, faLaptopCode, faSitemap } from '@fortawesome/free-solid-svg-ic
 export const skills = [
     {
         type: 'Engineering Lead',
-        info: '7+ years of experience in leading teams.',
+        info: '15 Years of Development Experience',
         icon: faUsers,
         animation: 'from-left'
     },
     {
         type: 'Frontend Engineer',
-        info: 'micro-ui, JavaScript, React, TypeScript, etc',
+        info: 'JavaScript, React, TypeScript, Micro UI, etc',
         icon: faLaptopCode,
         animation: ''
     },
     {
         type: 'Backend Engineer',
-        info: 'micro-services, NodeJs, AWS, Kubernetes',
+        info: 'NodeJs, AWS, Kubernetes, Micro Services',
         icon: faSitemap,
         animation: 'from-right'
     },

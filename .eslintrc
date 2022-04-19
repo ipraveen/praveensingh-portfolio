@@ -5,13 +5,14 @@
     "import/no-unresolved": 0,
     "react/display-name": 0,
     "react/prop-types": 0,
+    "react/jsx-indent": 4,
     "prettier/prettier": [
       "error",
       {
         "trailingComma": "es5",
         "singleQuote": true,
         "printWidth": 120,
-        "tabWidth": 2
+        "tabWidth": 4
       }
     ]
   }

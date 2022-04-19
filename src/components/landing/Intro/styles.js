@@ -1,13 +1,12 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-position: relative;
+    position: relative;
     padding-bottom: 8rem;
     background-size: contain;
     background-position: right top;
     background-repeat: no-repeat;
-    background: #c1dcec;
-    background-image: radial-gradient(circle farthest-side at 50% 50%,#39abff,#253f6f);
+    background: radial-gradient(55.36% 221.46% at 23.59% 28.54%, #037c8f 1.6%, #18616d 100%);
 `;
 
 export const IntroWrapper = styled.div`
@@ -28,7 +27,6 @@ export const Details = styled.div`
         width: 100%;
         margin-bottom: 2rem;
     }
-
 
     h1 {
         margin-bottom: 2rem;
@@ -51,7 +49,6 @@ export const Details = styled.div`
         color: ${({ theme }) => (theme === 'light' ? '#fff' : '#fff')};
         animation: slideFromBottom 1s ease-in;
 
-
         @media (max-width: 960px) {
             mix-blend-mode: ${({ theme }) => (theme === 'light' ? 'unset' : 'difference')};
         }
@@ -59,6 +56,9 @@ export const Details = styled.div`
         @media (max-width: 680px) {
             font-size: 26pt;
         }
+    }
+    p {
+        color: lightgray;
     }
 `;
 
@@ -86,4 +86,4 @@ export const WhiteWave = styled.div`
     background-position: 50% 100%;
     background-size: cover;
     background-repeat: no-repeat;
- `
+ `;

@@ -15,8 +15,8 @@ export const Brand = styled.div`
     cursor: pointer;
     h1 {
         font-family: monospace;
-        font-size: 42px;
-        font-weight: 500;
+        font-size: 22px;
+        font-weight: 600;
         color: #fff;
         letter-spacing: 0.2rem;
     }
