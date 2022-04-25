@@ -1,0 +1,14 @@
+@import url('reset.scss');
+@import url('variables.css');
+@import url('util.scss');
+@import url('components.scss');
+
+html {
+    font-family: var(--ff-serif);
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    min-height: 100vh;
+}
