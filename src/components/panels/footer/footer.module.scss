@@ -1,0 +1,30 @@
+.footer {
+    .footer-content {
+        margin: 0;
+        padding: 0;
+        margin-top: 5rem;
+        padding: 3rem 0;
+        color: var(--clr-gray-100);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    background: radial-gradient(
+        55.36% 221.46% at 23.59% 28.54%,
+        var(--clr-theme-light) 1.6%,
+        var(--clr-theme-dark) 100%
+    );
+}
+.links {
+    display: flex;
+    align-items: center;
+
+    a {
+        margin: 0 1rem;
+
+        img {
+            margin: 0;
+        }
+    }
+}

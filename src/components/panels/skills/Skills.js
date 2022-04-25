@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container } from 'components/common';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as styles from './skills.module.scss';
 import { skills } from './data';

@@ -29,17 +29,19 @@ export const Wrapper = styled.div`
 
         h1 {
             margin: 1px 0;
+            font-size: 1.4rem;
         }
 
         h2 {
-            font-size: 1.1rem;
+            font-size: 1rem;
+            text-transform: uppercase;
+            margin-top: 1rem;
+}
+            
         }
         h3 {
             font-size: 1rem;
         }
 
-        h4 {
-            font-size: 0.8rem;
-        }
     }
 `;

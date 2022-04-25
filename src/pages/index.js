@@ -7,7 +7,7 @@ import SkillsMap from 'components/panels/skills-map/SkillsMap';
 import WorkExperience from 'components/panels/work-experience/WorkExperience';
 import Certifications from 'components/panels/certifications/Certifications';
 import * as styles from './pages.module.scss';
-
+import Footer from 'components/panels/footer/Footer';
 
 const App = () => (
     <div>
@@ -33,7 +33,7 @@ const App = () => (
             <h1 className={styles.sectionTitle}>Certifications</h1>
             <Certifications />
         </section>
-        {/* <Highlights /> */}
+        <Footer />
     </div>
 );
 

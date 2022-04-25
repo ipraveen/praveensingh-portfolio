@@ -30,9 +30,13 @@
 }
 
 .from-left {
-    animation: slideFromLeft 1s ease-in;
+    :global {
+        animation: slideFromLeft 1s ease-in;
+    }
 }
 
 .from-right {
-    animation: slideFromRight 1s ease-in;
+    :global {
+        animation: slideFromRight 1s ease-in;
+    }
 }

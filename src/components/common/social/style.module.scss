@@ -1,0 +1,21 @@
+.list {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--clr-gray-100);
+    a {
+        color: var(--clr-gray-100);
+        text-decoration: none;
+        transition: all .2s ease-in-out;
+        &:hover {
+            color: var(--clr-white);
+            transform: scale(1.1);
+        }
+    }
+}
+
+.icon {
+    font-size: 3rem;
+}
