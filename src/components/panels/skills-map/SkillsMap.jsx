@@ -15,7 +15,7 @@ const Education = () => {
                             </div>
 
                             <div className="skills-group">
-                                <div className="skills-item card card">
+                                <div className="skills-item card">
                                     <img src="/images/skills/node.png" width="120px" /> <b>Node</b>
                                 </div>
                                 <div className="skills-item card">

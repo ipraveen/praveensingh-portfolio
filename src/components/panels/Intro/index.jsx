@@ -3,10 +3,12 @@ import dev from 'assets/images/praveen.png';
 import Header from '../header/Header';
 import * as styles from './intro.module.scss';
 import SocialList from 'components/common/social/SocialList';
+import FloatingSquare from '../backgrounds/FloatingSquare';
 
 const Intro = () => {
     return (
         <div className={`${styles.intro}`}>
+            <FloatingSquare />
             <Header />
             <div className="container">
                 <div className={styles.introWrapper}>

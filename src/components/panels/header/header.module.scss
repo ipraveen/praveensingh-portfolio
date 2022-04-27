@@ -1,8 +1,15 @@
 .header {
     display: flex;
+  
     padding: 1.5rem 0;
     align-items: center;
     justify-content: space-between;
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: .5rem;
+    }
 }
 
 .logo {
@@ -17,6 +24,9 @@
         font-weight: 500;
         color: #fff;
         letter-spacing: 0.2rem;
+        @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+            margin-bottom: 0.5rem;
+        }
     }
     span {
         color: #8b969c;
@@ -26,23 +36,21 @@
 }
 
 .navLinks {
+    display: flex;
+    gap: 2rem;
+   
     a {
         color: #fff;
         text-decoration: none;
         font-size: 1rem;
-        @media (max-width: 960px) {
-            color: #587686;
-        }
     }
-    align-items: center;
-    display: flex;
-    @media (max-width: 960px) {
-        display: none;
-    }
-    a {
-        margin-right: 1rem;
-        &:last-child {
-            margin-right: unset;
+
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+        width: 90%;
+        justify-content: space-between;
+        a {
+            font-size: 0.8rem;
         }
+       
     }
 }

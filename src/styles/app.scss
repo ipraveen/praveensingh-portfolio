@@ -1,8 +1,8 @@
-@import url('reset.scss');
-@import url('variables.css');
-@import url('utils.scss');
-@import url('animations.scss');
-@import url('components.scss');
+@import 'reset.scss';
+@import 'variables.scss';
+@import 'utils.scss';
+@import 'animations.scss';
+@import 'components.scss';
 
 html {
     font-family: var(--ff-serif);

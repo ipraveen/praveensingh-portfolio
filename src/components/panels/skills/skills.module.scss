@@ -3,6 +3,10 @@
     justify-content: center;
     align-items: center;
     gap: 2rem;
+
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+        flex-direction: column;
+    }
     .item {
         display: flex;
         flex-direction: column;
@@ -26,17 +30,37 @@
             color: gray;
             text-align: center;
         }
+        @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+            width: 250px;
+            height: 200px;
+            padding: 2rem;
+        }
     }
 }
 
 .from-left {
     :global {
         animation: slideFromLeft 1s ease-in;
+        @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+            animation: none;
+        }
     }
 }
 
 .from-right {
     :global {
         animation: slideFromRight 1s ease-in;
+        @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+            animation: none;
+        }
+    }
+}
+
+.from-bottom {
+    :global {
+        animation: slideFromBottom 1s ease-in;
+        @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+            animation: none;
+        }
     }
 }

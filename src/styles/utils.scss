@@ -1,4 +1,4 @@
-/* COLOR */
+/* UTILS */
 
 .bg-dark {
     background-color: hsl(var(--clr-dark));
@@ -159,6 +159,12 @@
 
     &.grid-4 {
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    &.grid-sm-1 {
+        @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+            grid-template-columns: 1fr;
+        }
     }
 }
 

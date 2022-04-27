@@ -9,7 +9,7 @@ const Education = () => {
         <Container>
             <Wrapper>
                 <section className="education">
-                    <div className="container grid">
+                    <div className="container grid grid-sm-1">
                         <section className="item card">
                             <h1>Master of Science (MS)</h1>
                             <h2>Software System</h2>

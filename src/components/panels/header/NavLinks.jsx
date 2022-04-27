@@ -7,7 +7,7 @@ function NavLinks(props) {
     return (
         <div className={styles.navLinks} as={Link} to="/">
             <a target="_blank" href={config.socialLinks.youtube}>
-                iCodingClub
+                YouTube
             </a>
             <a target="_blank" href={config.socialLinks.medium}>
                 Medium

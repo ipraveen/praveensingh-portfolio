@@ -6,18 +6,41 @@ export const Wrapper = styled.div`
             display: flex;
             justify-content: center;
             gap: 20px;
+            flex-wrap: wrap;
+
+            @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+                flex-wrap: wrap;
+                /* flex-direction: column; */
+            }
         }
 
         .logo {
             display: flex;
             flex-direction: column;
+            text-align: center;
 
             span {
                 color: gray;
             }
+
+            @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+                width: 90%;
+                display: flex;
+            justify-content: center;
+            align-items: center;
+
+                img {
+                    width: 50%;
+                }
+
+                span{
+                    font-size: .7rem;
+                }
+            }
         }
         .work-item {
             display: flex;
+            flex: 1 1 auto;
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -28,6 +51,10 @@ export const Wrapper = styled.div`
             padding: 2rem;
             border-radius: 20px;
             transition: transform 0.2s ease-in;
+
+            @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+                width: 150px;
+            }
 
             img {
                 margin-bottom: 0;

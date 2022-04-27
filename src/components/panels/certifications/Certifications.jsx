@@ -8,7 +8,7 @@ const Education = () => (
     <Container>
         <Wrapper>
             <section className="certifications">
-                <div className="container grid grid-3">
+                <div className="container grid grid-3 grid-sm-1">
                     <section className="item card">
                         <img src="images/exp/scwcd.jpeg" alt="" />
                         <h1>SCWCD</h1>

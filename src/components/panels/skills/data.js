@@ -2,18 +2,18 @@ import { faUsers, faLaptopCode, faSitemap } from '@fortawesome/free-solid-svg-ic
 
 export const skills = [
     {
-        id: 1,
-        type: 'Engineering Lead',
-        info: '15 Years of Development Experience',
-        icon: faUsers,
-        animation: 'fromLeft',
-    },
-    {
         id: 2,
         type: 'Frontend Engineer',
         info: 'JavaScript, React, TypeScript, Micro UI, etc',
         icon: faLaptopCode,
-        animation: '',
+        animation: 'fromLeft',
+    },
+    {
+        id: 1,
+        type: 'Engineering Lead',
+        info: '15 Years of Development Experience',
+        icon: faUsers,
+        animation: 'fromBottom',
     },
     {
         id: 3,

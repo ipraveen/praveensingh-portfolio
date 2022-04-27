@@ -6,19 +6,27 @@ export const Wrapper = styled.div`
             display: flex;
             justify-content: center;
             width: 100%;
+            overflow: hidden;
+
+            @media only screen and (min-device-width: 375px) and (max-device-width: 1200px){ 
+                flex-direction: column;
+            }
 
             .skills-group {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
 
+                @media only screen and (min-device-width: 375px) and (max-device-width: 1200px){ 
+                flex-direction: row;
+            }
+
                 .skills-item {
                     border-radius: 16px;
-                    width: 200px;
-                    height: 170px;
-                    padding: 5px;
+                    width: 180px;
+                    height: 160px;
+                    padding: 2px;
                     background: white;
-                    margin: 10px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -26,7 +34,7 @@ export const Wrapper = styled.div`
                     transition: transform 0.2s ease-in;
 
                     img {
-                        width: 96px;
+                        width: 72px;
                     }
 
                     &:hover {
@@ -35,6 +43,21 @@ export const Wrapper = styled.div`
                     b {
                         margin-top: 0.6rem;
                         color: slategray;
+                    }
+
+                    @media only screen and (min-device-width: 375px) and (max-device-width: 812px){ 
+                        width: 120px;
+                        height: 100px;
+                        text-align: center;
+
+                        img {
+                            width: 36px;
+                            margin-bottom: .2rem;
+                        }
+
+                        b {
+                            font-size: .8rem
+                        }
                     }
                 }
             }

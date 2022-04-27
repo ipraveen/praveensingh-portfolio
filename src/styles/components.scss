@@ -23,6 +23,10 @@
     margin: 10px;
     color: var(--clr-theme-light);
     transition: transform 0.2s ease-in;
+
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
+        padding: 10px;
+    }
 }
 
 .card:hover {
