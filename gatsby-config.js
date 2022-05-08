@@ -17,22 +17,5 @@ module.exports = {
         'gatsby-plugin-fontawesome-css',
         'gatsby-plugin-sitemap',
         'gatsby-plugin-offline',
-        {
-            resolve: 'gatsby-plugin-favicons',
-            options: {
-                logo: './static/favicon/favicon.png',
-                appName: config.defaultTitle,
-                background: '#fff',
-                icons: {
-                    android: true,
-                    appleIcon: true,
-                    appleStartup: true,
-                    coast: false,
-                    favicons: true,
-                    yandex: false,
-                    windows: false,
-                },
-            },
-        },
     ],
 };
