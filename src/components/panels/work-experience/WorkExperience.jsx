@@ -10,25 +10,6 @@ const Education = () => (
                     <img alt={alt} src={img} />
                 </div>
             ))}
-
-            {/* <div className="item card">
-                <img alt="Intuit" src="images/exp/intuit.jpeg" />
-            </div>
-            <div className="item card">
-                <img alt="Canva" src="images/exp/canva.png" />
-            </div>
-
-            <div className="item card">
-                <div className="logo">
-                    <img alt="BT" src="images/exp/bt.jpeg" />
-                </div>
-            </div>
-
-            <div className="item card">
-                <div className="logo">
-                    <img alt="nokia" src="images/exp/nokia.png" />
-                </div>
-            </div> */}
         </div>
     </div>
 );

@@ -1,63 +1,37 @@
 import React from 'react';
-import { Wrapper } from './SkillsMap.style';
+import * as styles from './skills-map.module.scss';
+import { groups } from './data';
+import GlowingRadialFrame from 'components/frames/glowing-radial/GlowingRadialFrame';
 
-const Education = () => {
+const SkillMap = () => {
     return (
-        <Wrapper>
-            <section className="skills">
-                <div className="container">
-                    <div className="skills-section">
-                        <div className="skills-container">
-                            <div className="skills-group">
-                                <div className="skills-item card">
-                                    <img src="/images/skills/redux.png" /> <b>Redux</b>
+        <div className="container">
+            <div className={styles.container}>
+                {groups.map(({ name, skills }) => (
+                    <>
+                        <h1 className="title">{name}</h1>
+                        <div className={styles.group}>
+                            {skills.map(({ label, image, color = '#3c77c9' }, index) => (
+                                <div className={styles.item}>
+                                    <GlowingRadialFrame
+                                        radius={55}
+                                        color={color}
+                                        strokeWidth="8"
+                                        strokeDashArray="1,16"
+                                    >
+                                        <div className={styles.itemImage} style={{ backgroundColor: `${color}33` }}>
+                                            <img src={`/images/skills/${image}`} />
+                                        </div>
+                                    </GlowingRadialFrame>
+                                    <b>{label}</b>
                                 </div>
-                            </div>
-
-                            <div className="skills-group">
-                                <div className="skills-item card">
-                                    <img src="/images/skills/node.png" width="120px" /> <b>Node</b>
-                                </div>
-                                <div className="skills-item card">
-                                    <img src="/images/skills/ds.png" width="128px" />
-                                    <b>Data Structure</b>
-                                </div>
-                            </div>
-
-                            <div className="skills-group">
-                                <div className="skills-item card">
-                                    <img src="/images/skills/react-96.png" width="96px" />
-                                    <b>React</b>
-                                </div>
-                                <div className="skills-item card">
-                                    <img src="/images/skills/js-96.png" width="96px" />
-                                    <b>JavaScript</b>
-                                </div>
-                                <div className="skills-item card">
-                                    <img src="/images/skills/ts.png" width="64px" />
-                                    <b>TypeScript</b>
-                                </div>
-                            </div>
-                            <div className="skills-group">
-                                <div className="skills-item card">
-                                    <img src="/images/skills/java.png" width="96px" />
-                                    <b>Java</b>
-                                </div>
-                                <div className="skills-item card">
-                                    <img src="/images/skills/spring.png" width="96px" /> <b>Spring</b>
-                                </div>
-                            </div>
-                            <div className="skills-group">
-                                <div className="skills-item card">
-                                    <img src="/images/skills/aws.png" width="96px" /> <b>AWS</b>
-                                </div>
-                            </div>
+                            ))}
                         </div>
-                    </div>
-                </div>
-            </section>
-        </Wrapper>
+                    </>
+                ))}
+            </div>
+        </div>
     );
 };
 
-export default Education;
+export default SkillMap;
