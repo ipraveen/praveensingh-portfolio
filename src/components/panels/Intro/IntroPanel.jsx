@@ -5,7 +5,7 @@ import SocialList from 'components/common/social/SocialList';
 import Avatar from 'components/panels/avatar/Avatar';
 import FloatingSquare from '../../backgrounds/floating-square/FloatingSquare';
 
-const Intro = () => {
+const IntroPanel = () => {
     return (
         <div className={`${styles.intro}`}>
             <FloatingSquare />
@@ -30,4 +30,4 @@ const Intro = () => {
     );
 };
 
-export default Intro;
+export default IntroPanel;

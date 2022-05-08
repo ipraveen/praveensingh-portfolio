@@ -1,5 +1,5 @@
 import React from 'react';
-import Intro from 'components/panels/intro/Intro';
+import Intro from 'components/panels/intro/IntroPanel';
 import { SEO } from 'components/common';
 import Skills from 'components/panels/skills/Skills';
 import Education from 'components/panels/educations/Education';
