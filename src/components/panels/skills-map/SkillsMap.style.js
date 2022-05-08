@@ -37,9 +37,6 @@ export const Wrapper = styled.div`
                         width: 72px;
                     }
 
-                    &:hover {
-                        transform: scale(1.1);
-                    }
                     b {
                         margin-top: 0.6rem;
                         color: slategray;

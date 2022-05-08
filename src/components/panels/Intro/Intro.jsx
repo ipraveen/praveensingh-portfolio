@@ -3,7 +3,8 @@ import dev from 'assets/images/praveen.png';
 import Header from '../header/Header';
 import * as styles from './intro.module.scss';
 import SocialList from 'components/common/social/SocialList';
-import FloatingSquare from '../backgrounds/FloatingSquare';
+import Avatar from 'components/panels/avatar/Avatar';
+import FloatingSquare from '../../backgrounds/floating-square/FloatingSquare';
 
 const Intro = () => {
     return (
@@ -22,9 +23,7 @@ const Intro = () => {
                         </p>
                         <SocialList />
                     </div>
-                    <div className={styles.avatar}>
-                        <img src={dev} alt="Praveen Singh" />
-                    </div>
+                        <Avatar />
                 </div>
                 <div className={styles.wave} />
             </div>

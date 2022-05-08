@@ -12,6 +12,8 @@ export const Wrapper = styled.div`
             justify-content: center;
             align-items: center;
             height: 320px;
+
+            
         }
 
         .item.card {

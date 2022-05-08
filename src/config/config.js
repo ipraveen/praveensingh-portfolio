@@ -1,5 +1,5 @@
 module.exports = {
-    defaultTitle: 'Praveen Singh: A Full Stack JavaScript Engineer and Engineering Lead',
+    defaultTitle: 'Praveen Singh: full-stack JavaScript Engineer and Web Application Architect | portfolio | Blog',
     author: 'Praveen Singh',
     socialLinks: {
         twitter: 'https://twitter.com/i_praveensingh',

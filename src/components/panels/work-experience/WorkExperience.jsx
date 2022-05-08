@@ -1,48 +1,36 @@
 import React from 'react';
-import { Wrapper } from './WorkExperience.style';
+import * as styles from './workExperience.module.scss';
+import { data } from './data';
 
 const Education = () => (
-    <Wrapper>
-        <section className="exp-showcase">
-            <div className="container">
-                <div className="item card 2x">
-                    <div className="logo">
-                        <img alt="Intuit" src="images/exp/intuit.jpeg" />
-                        <span className="bold">Feb 2020 – Present</span>
-                    </div>
+    <div className="container">
+        <div className={styles.items}>
+            {data.map(({ img, color, alt }, index) => (
+                <div className={styles.item} style={{ backgroundColor: `${color}4a`, animationDelay: `${index}s` }}>
+                    <img alt={alt} src={img} />
+                </div>
+            ))}
+
+            {/* <div className="item card">
+                <img alt="Intuit" src="images/exp/intuit.jpeg" />
+            </div>
+            <div className="item card">
+                <img alt="Canva" src="images/exp/canva.png" />
+            </div>
+
+            <div className="item card">
+                <div className="logo">
+                    <img alt="BT" src="images/exp/bt.jpeg" />
                 </div>
             </div>
-            <div className="container">
-                <div className="item card">
-                    <div className="logo">
-                        <img alt="Canva" src="images/exp/canva.png" />
-                        <span>Sep 2019 – Jan 2020</span>
-                    </div>
-                </div>
 
-                <div className="item card">
-                    <div className="logo">
-                        <img alt="Intuit" src="images/exp/intuit.jpeg" />
-                        <span>Jan 2014 – Sep 2019</span>
-                    </div>
+            <div className="item card">
+                <div className="logo">
+                    <img alt="nokia" src="images/exp/nokia.png" />
                 </div>
-
-                <div className="item card">
-                    <div className="logo">
-                        <img alt="BT" src="images/exp/bt.jpeg" />
-                        <span>Feb 2012 – Jan 2014</span>
-                    </div>
-                </div>
-
-                <div className="item card">
-                    <div className="logo">
-                        <img alt="nokia" src="images/exp/nokia.png" />
-                        <span>Dec 2008 – Jan 2012</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </Wrapper>
+            </div> */}
+        </div>
+    </div>
 );
 
 export default Education;

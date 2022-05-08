@@ -15,40 +15,6 @@ import {
 } from 'config/config';
 
 export const SEO = ({ title = defaultTitle, description = defaultDescription }) => {
-    // const structuredDataOrganization = `{ 
-	// 	"@context": "http://schema.org",
-	// 	"@type": "Organization",
-	// 	"legalName": "${legalName}",
-	// 	"url": "${url}",
-	// 	"logo": "${logo}",
-	// 	"foundingDate": "${foundingDate}",
-	// 	"founders": [{
-	// 		"@type": "Person",
-	// 		"name": "${legalName}"
-	// 	}],
-	// 	"contactPoint": [{
-	// 		"@type": "ContactPoint",
-	// 		"email": "${contact.email}",
-	// 		"telephone": "${contact.phone}",
-	// 		"contactType": "customer service"
-	// 	}],
-	// 	"address": {
-	// 		"@type": "PostalAddress",
-	// 		"addressLocality": "${address.city}",
-	// 		"addressRegion": "${address.region}",
-	// 		"addressCountry": "${address.country}",
-	// 		"postalCode": "${address.zipCode}"
-	// 	},
-	// 	"sameAs": [
-	// 		"${socialLinks.twitter}",
-	// 		"${socialLinks.google}",
-	// 		"${socialLinks.youtube}",
-	// 		"${socialLinks.linkedin}",
-	// 		"${socialLinks.instagram}",
-	// 		"${socialLinks.github}"
-	// 	]
-  	// }`;
-
     return (
         <Helmet>
             <meta name="description" content={description} />

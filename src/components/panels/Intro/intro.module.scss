@@ -58,24 +58,6 @@
     }
 }
 
-.avatar {
-    flex: 1;
-    text-align: center;
-    img {
-        width: 220px;
-        border: 4px solid hsla(0, 0%, 100%, 100%);
-        border-radius: 200px;
-    }
-
-    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
-        img {
-            width: 120px;
-            border: 4px solid hsla(0, 0%, 100%, 100%);
-            border-radius: 100px;
-        }
-    }
-}
-
 .wave {
     position: absolute;
     left: 0;
