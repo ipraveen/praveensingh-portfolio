@@ -55,6 +55,7 @@
         "eslint-plugin-react-hooks": "^4.5.0",
         "gatsby-plugin-emotion": "^7.13.0",
         "gatsby-plugin-postcss": "^5.13.0",
+        "gatsby-plugin-resolve-src": "^2.1.0",
         "postcss": "^8.4.13",
         "prettier": "2.6.2",
         "twin.macro": "^2.8.2"

@@ -11,6 +11,7 @@ module.exports = {
         siteUrl: 'https://praveensingh.net',
     },
     plugins: [
+        'gatsby-plugin-resolve-src',
         'gatsby-plugin-sass',
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-styled-components',
