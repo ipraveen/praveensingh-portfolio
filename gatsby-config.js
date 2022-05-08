@@ -17,5 +17,13 @@ module.exports = {
         'gatsby-plugin-fontawesome-css',
         'gatsby-plugin-sitemap',
         'gatsby-plugin-offline',
+        {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+                name: config.defaultTitle,
+                background_color: `#fff`,
+                icon: './static/favicon/favicon.png',
+            },
+        },
     ],
 };
