@@ -4,6 +4,14 @@
     "description": "Praveen Singh Portfolio",
     "version": "2.0.0",
     "author": "Praveen Singh",
+    "scripts": {
+        "start": "gatsby develop",
+        "develop": "gatsby develop",
+        "build": "NODE_ENV=production gatsby build",
+        "serve": "gatsby serve",
+        "clean": "gatsby clean",
+        "clean:install": "npm cache clean -f && rm -rf node_modules/ && npm install"
+    },
     "dependencies": {
         "@fortawesome/fontawesome-free": "^6.1.1",
         "@fortawesome/fontawesome-svg-core": "^6.1.1",
@@ -29,13 +37,6 @@
         "react-helmet": "^6.1.0",
         "sass": "^1.51.0",
         "styled-components": "^5.3.5"
-    },
-    "scripts": {
-        "start": "gatsby develop",
-        "develop": "gatsby develop",
-        "build": "NODE_ENV=production gatsby build",
-        "serve": "gatsby serve",
-        "clean": "gatsby clean"
     },
     "devDependencies": {
         "@emotion/react": "^11.9.0",
