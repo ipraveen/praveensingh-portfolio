@@ -1,5 +1,4 @@
 import React from 'react';
-import dev from 'assets/images/praveen.png';
 import Header from '../header/Header';
 import * as styles from './intro.module.scss';
 import SocialList from 'components/common/social/SocialList';

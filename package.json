@@ -7,7 +7,7 @@
     "scripts": {
         "start": "gatsby develop",
         "develop": "gatsby develop",
-        "build": "NODE_ENV=production gatsby build",
+        "build": "gatsby build",
         "serve": "gatsby serve",
         "clean": "gatsby clean",
         "clean:install": "npm cache clean -f && rm -rf node_modules/ && npm install"
