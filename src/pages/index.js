@@ -1,5 +1,5 @@
 import React from 'react';
-import Intro from 'components/panels/intro/IntroPanel';
+import IntroPanel from 'components/panels/intro-panel/IntroPanel';
 import { SEO } from 'components/common';
 import Skills from 'components/panels/skills/Skills';
 import Education from 'components/panels/educations/Education';
@@ -12,7 +12,7 @@ import Footer from 'components/panels/footer/Footer';
 const App = () => (
     <div>
         <SEO />
-        <Intro /> <br />
+        <IntroPanel /> <br />
         <section>
             <h1 className={styles.sectionTitle}>Skills Summary</h1>
             <Skills />
