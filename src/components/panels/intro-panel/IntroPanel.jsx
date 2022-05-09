@@ -14,15 +14,15 @@ const IntroPanel = () => {
                 <div className={styles.introWrapper}>
                     <div className={styles.content}>
                         <h1>Hi, I'm Praveen Singh</h1>
+                        <h3> FRONTEND EXPERT | FULL STACK ENGINEER | Web Application Architect</h3>
                         <p>
-                            I'm a full-stack JavaScript Engineer and Web Application Architect. <br />I have been
-                            developing enterprise-grade, highly scalable, data-driven web applications professionally
-                            for <b>15+</b> years and led multiple full-size development teams for <b>8+</b> years as a
-                            Tech Lead.
+                            I have been developing enterprise-grade, highly scalable, data-driven web applications
+                            professionally for <b>15+</b> years and led multiple full-size development teams for&nbsp;
+                            <b>8+</b> years as a Tech Lead.
                         </p>
                         <SocialList />
                     </div>
-                        <Avatar />
+                    <Avatar />
                 </div>
                 <div className={styles.wave} />
             </div>

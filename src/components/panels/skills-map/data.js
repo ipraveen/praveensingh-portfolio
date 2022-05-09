@@ -44,7 +44,7 @@ export const groups = [
         name: 'Backend Skills',
         skills: [
             {
-                label: 'Node',
+                label: 'NodeJs',
                 image: 'node.svg',
                 color: '#599550',
             },
