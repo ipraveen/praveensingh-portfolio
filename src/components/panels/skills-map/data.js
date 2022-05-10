@@ -4,7 +4,7 @@ export const groups = [
         skills: [
             {
                 label: 'JavaScript',
-                image: 'js.png',
+                image: 'js.jpg',
                 color: '#d4bc45',
             },
             {
@@ -30,7 +30,7 @@ export const groups = [
             },
             {
                 label: 'CSS',
-                image: 'css.png',
+                image: 'css.svg',
                 color: '#0370bc',
             },
             {
@@ -45,7 +45,7 @@ export const groups = [
         skills: [
             {
                 label: 'NodeJs',
-                image: 'node.svg',
+                image: 'nodejs.png',
                 color: '#599550',
             },
             {
@@ -70,7 +70,7 @@ export const groups = [
             },
             {
                 label: 'Kubernetes',
-                image: 'kubernetes.png',
+                image: 'kubernetes.svg',
                 color: '#326ce4',
             },
         ],

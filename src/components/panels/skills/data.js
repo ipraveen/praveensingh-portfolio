@@ -10,7 +10,7 @@ export const skills = [
     },
     {
         id: 1,
-        type: 'Engineering Lead',
+        type: 'Tech Lead & Architect',
         info: '15 Years of Development Experience',
         icon: faUsers,
         animation: 'fromBottom',
