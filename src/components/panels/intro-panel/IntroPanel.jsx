@@ -15,8 +15,7 @@ const IntroPanel = () => {
                     <div className={styles.content}>
                         <h1>Hi, I'm Praveen Singh</h1>
                         <p>
-                            I'm a <b>Full-Stack Engineer</b> and <b>Architect</b> with Frontend and Microservice Design
-                            and Development expertise.
+                            I'm a <b>Full-Stack Engineer</b> with Frontend Expertise and Microservice Development experience.
                             <br /> I have been developing enterprise-grade, highly scalable, data-driven web
                             applications professionally for <b>15+</b> years and led multiple full-size development
                             teams for&nbsp;

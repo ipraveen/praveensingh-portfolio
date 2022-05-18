@@ -1,7 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faTwitter, faYoutube, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import * as style from './style.module.scss';
 
 const SocialList = () => (
@@ -13,7 +12,10 @@ const SocialList = () => (
             <FontAwesomeIcon size="2x" icon={faGithub} />
         </a>
         <a target="_blank" href="https://twitter.com/i_praveensingh">
-            <FontAwesomeIcon size="2x" className={style.icon} icon={faTwitter} />
+            <FontAwesomeIcon size="2x" icon={faTwitter} />
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/praveenkumarsingh84/">
+            <FontAwesomeIcon size="2x" icon={faLinkedin} />
         </a>
     </div>
 );
