@@ -1,22 +1,57 @@
 :root {
-    --clr-theme-dark: #18616d;
-    --clr-theme-light: #037c8f;
-    --clr-theme-dark-extra: #055a68;
-    --clr-light: 231 77% 90%;
-    --clr-white: #ffffff;
+    color-scheme: dark light;
+}
 
-    --clr-yellow: #F5C32C;
-    --clr-orange : #FCA61F;
-    --clr-black : #242D49;
-    --clr-gray : #788097;
-    --clr-gray-100 : #d7d8db;
-    --clr-blueCard : #DDF8FE;
-    --clr-purple: rgb(238 210 255);
-    --clr-boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
-    --clr-orangeCard: rgba(252, 166, 31, 0.45);
-    --clr-smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+@media (prefers-color-scheme: light) {
+    :root {
+        --clr-theme-background: #ffffff;
+        --clr-theme-dark: #18616d;
+        --clr-theme-light: #037c8f;
+        --clr-theme-dark-extra: #055a68;
+        --clr-theme-text: slategray;
+        --clr-theme-text-light: gray;
+        --clr-light: 231 77% 90%;
+        --clr-white: #ffffff;
+        --clr-theme-card: #ffffff;
+        --clr-yellow: #f5c32c;
+        --clr-orange: #fca61f;
+        --clr-black: #242d49;
+        --clr-gray: #788097;
+        --clr-gray-100: #d7d8db;
+        --clr-blueCard: #ddf8fe;
+        --clr-purple: rgb(238 210 255);
+        --clr-boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+        --clr-orangeCard: rgba(252, 166, 31, 0.45);
+        --clr-smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+    }
+}
 
+@media (prefers-color-scheme: dark) {
+    :root {
+        --clr-theme-background: #0c161d;
+        --clr-theme-dark: #0a161f;
+        --clr-theme-light: #085087;
+        --clr-theme-dark-extra: #055a68;
+        --clr-theme-text: #ffffff;
+        --clr-theme-text-light: rgb(177, 177, 177);
+        --clr-theme-card: #000c14;
+        --clr-light: 231 77% 90%;
+        --clr-white: #ffffff;
 
+        --clr-yellow: #f5c32c;
+        --clr-orange: #fca61f;
+        --clr-black: #242d49;
+        --clr-gray: #788097;
+        --clr-gray-100: #d7d8db;
+        --clr-blueCard: #ddf8fe;
+        --clr-purple: rgb(238 210 255);
+        --clr-boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+        --clr-orangeCard: rgba(252, 166, 31, 0.45);
+        --clr-smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+    }
+}
+
+:root {
     /* font-sizes */
     --fs-900: 9.375rem;
     --fs-800: 6.25rem;

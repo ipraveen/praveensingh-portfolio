@@ -9,7 +9,7 @@ const SkillMap = () => {
             <div className={styles.container}>
                 {groups.map(({ name, skills }) => (
                     <>
-                        <h1 className="title">{name}</h1>
+                        <h1>{name}</h1>
                         <div className={styles.group}>
                             {skills.map(({ label, image, color = '#3c77c9' }, index) => (
                                 <div className={styles.item}>

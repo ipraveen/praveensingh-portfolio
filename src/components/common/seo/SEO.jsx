@@ -19,6 +19,7 @@ export const SEO = ({ title = defaultTitle, description = defaultDescription }) 
         <Helmet>
             <meta name="description" content={description} />
             <meta name="image" content={Thumbnail} />
+            <meta name="color-scheme" content="dark light" />
 
             {/* <meta property="og:url" content={`${url}${location}/?ref=smakosh.com`} />
             <meta property="og:type" content="website" />
