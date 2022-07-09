@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
         .item {
             display: flex;
             flex-direction: column;
-            justify-content: flex-start;
+            justify-content: center;
             align-items: center;
             height: 240px;
           
@@ -26,7 +26,7 @@ export const Wrapper = styled.div`
         }
 
         h2 {
-            font-size: 1rem;
+            font-size: .9rem;
             color: gray;
         }
     }
