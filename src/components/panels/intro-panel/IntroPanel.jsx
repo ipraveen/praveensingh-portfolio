@@ -7,7 +7,7 @@ import FloatingSquare from '../../backgrounds/floating-square/FloatingSquare';
 
 const IntroPanel = () => {
     return (
-        <div className={`${styles.intro}`}>
+        <div className={styles.intro}>
             <FloatingSquare />
             <Header />
             <div className="container">
