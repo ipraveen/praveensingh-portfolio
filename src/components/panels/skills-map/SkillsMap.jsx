@@ -20,7 +20,7 @@ const SkillMap = () => {
                                         strokeDashArray="1,16"
                                     >
                                         <div className={styles.itemImage} style={{ backgroundColor: `${color}33` }}>
-                                            <img src={`/images/skills/${image}`} />
+                                            <img src={`/images/skills/${image}`} alt={label}/>
                                         </div>
                                     </GlowingRadialFrame>
                                     <b>{label}</b>

@@ -4,6 +4,7 @@ import * as styles from './intro.module.scss';
 import SocialList from 'components/common/social/SocialList';
 import Avatar from 'components/panels/avatar/Avatar';
 import FloatingSquare from '../../backgrounds/floating-square/FloatingSquare';
+import config from 'config/config';
 
 const IntroPanel = () => {
     return (
@@ -14,13 +15,7 @@ const IntroPanel = () => {
                 <div className={styles.introWrapper}>
                     <div className={styles.content}>
                         <h1>Hi, I'm Praveen Singh</h1>
-                        <p>
-                            I'm a <b>Full-Stack Engineer</b> with Frontend Expertise and Microservice Development experience.
-                            <br /> I have been developing enterprise-grade, highly scalable, data-driven web
-                            applications professionally for <b>15+</b> years and led multiple full-size development
-                            teams for&nbsp;
-                            <b>8+</b> years as a Tech Lead.
-                        </p>
+                        <p dangerouslySetInnerHTML={{ __html: config.defaultDescription }} />
                         <SocialList />
                     </div>
                     <Avatar />
