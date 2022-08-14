@@ -1,10 +1,8 @@
 module.exports = {
     defaultTitle: 'Praveen Singh: full-stack JavaScript Engineer and Web Application Architect | portfolio | Blog',
-    defaultDescription: `I'm a <b>Full-Stack Engineer</b> with Frontend Expertise and Microservice Development experience.
-    <br /> I have been developing enterprise-grade, highly scalable, data-driven web
+    defaultDescription: `I'm a <b>Full Stack Engineer</b> with the passion for Frontend Development and large scale System Design. I have been developing, highly scalable, data-driven web
     applications professionally for <b>15+</b> years and led multiple full-size development
-    teams for&nbsp;
-    <b>8+</b> years as a Tech Lead.`,
+    teams as a Tech Lead.`,
     author: 'Praveen Singh',
     url: 'https://praveensingh.net/',
     socialLinks: {
