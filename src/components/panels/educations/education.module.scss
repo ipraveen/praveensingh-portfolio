@@ -4,16 +4,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 280px;
-    padding: 1rem;
     img {
         margin-bottom: 2rem;
     }
-    &.card {
-        &:hover {
-            transform: scale(1);
-        }
-    }
+
+
 }
 
 .education {
