@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-// import { Wrapper } from './Blogs.style';
 import * as style from './style.module.scss';
 
 export default () => {
@@ -22,21 +21,21 @@ export default () => {
 
     return (
         <div className={style.wrapper}>
-            <ul className="slider">
+            <div className={style.posts}>
                 {posts.map(({ title, content, link, thumbnail }) => (
-                    <li className="post card">
+                    <div className="card">
                         <a target="_blank" href={link} rel="noreferrer">
                             <img alt="" src={thumbnail} className="topImg"></img>
                             <div className="content">
-                                <div className="blog_preview">
+                                <div className="preview">
                                     <h2 className="title">{title}</h2>
                                     <p className="intro">{toText(content)}</p>
                                 </div>
                             </div>
                         </a>
-                    </li>
+                    </div>
                 ))}
-            </ul>
+            </div>
         </div>
     );
 };
