@@ -23,30 +23,30 @@ export const groups = [
                 color: '#7749bd',
             },
 
-            {
-                label: 'Figma',
-                image: 'figma.png',
-                color: '#ff4c13',
-            },
-            {
-                label: 'CSS',
-                image: 'css.svg',
-                color: '#0370bc',
-            },
-            {
-                label: 'HTML',
-                image: 'html.png',
-                color: '#e46546',
-            },
+            // {
+            //     label: 'Figma',
+            //     image: 'figma.png',
+            //     color: '#ff4c13',
+            // },
+            // {
+            //     label: 'CSS',
+            //     image: 'css.svg',
+            //     color: '#0370bc',
+            // },
+            // {
+            //     label: 'HTML',
+            //     image: 'html.png',
+            //     color: '#e46546',
+            // },
         ],
     },
     {
         name: 'Backend Skills',
         skills: [
             {
-                label: 'NodeJs',
-                image: 'nodejs.png',
-                color: '#599550',
+                label: 'Spring',
+                image: 'spring.png',
+                color: '#63ba35',
             },
             {
                 label: 'Java',
@@ -54,9 +54,9 @@ export const groups = [
                 color: '#5482a1',
             },
             {
-                label: 'Spring',
-                image: 'spring.png',
-                color: '#63ba35',
+                label: 'NodeJs',
+                image: 'nodejs.png',
+                color: '#599550',
             },
         ],
     },

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { Wrapper } from './Blogs.style';
+// import { Wrapper } from './Blogs.style';
+import * as style from './style.module.scss';
 
 export default () => {
     const [posts, setPosts] = useState([]);
@@ -20,7 +21,7 @@ export default () => {
     }
 
     return (
-        <Wrapper>
+        <div className={style.wrapper}>
             <ul className="slider">
                 {posts.map(({ title, content, link, thumbnail }) => (
                     <li className="post card">
@@ -36,6 +37,6 @@ export default () => {
                     </li>
                 ))}
             </ul>
-        </Wrapper>
+        </div>
     );
 };
