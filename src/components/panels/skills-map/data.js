@@ -17,11 +17,11 @@ export const groups = [
                 image: 'ts.png',
                 color: '#2e78c7',
             },
-            {
-                label: 'Redux',
-                image: 'redux.png',
-                color: '#7749bd',
-            },
+            // {
+            //     label: 'Redux',
+            //     image: 'redux.png',
+            //     color: '#7749bd',
+            // },
 
             // {
             //     label: 'Figma',
@@ -72,6 +72,10 @@ export const groups = [
                 label: 'Kubernetes',
                 image: 'kubernetes.svg',
                 color: '#326ce4',
+            }, {
+                label: 'Docker',
+                image: 'docker.png',
+                color: '#5482a1',
             },
         ],
     },
