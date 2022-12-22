@@ -1,7 +1,9 @@
 .posts {
-    gap: 4rem;
+    gap: 1rem;
     display: grid;
+    grid-auto-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+  
 
     @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
         grid-template-columns: 1fr 1fr;
@@ -10,6 +12,22 @@
     @media only screen and (max-device-width: 375px) {
         grid-template-columns: 1fr;
     }
+
+   
+}
+a{
+    display: flex;
+}
+
+.post{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;;
+    padding: 0;
+}
+
+.postContent{
+    padding: 1rem;
 }
 
 .wrapper {
