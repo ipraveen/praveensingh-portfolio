@@ -13,8 +13,8 @@ module.exports = {
     plugins: [
         'gatsby-plugin-sass',
         'gatsby-plugin-react-helmet',
-        'gatsby-plugin-fontawesome-css',
         'gatsby-plugin-sitemap',
+        `gatsby-plugin-theme-ui`,
         'gatsby-plugin-offline',
         {
             resolve: `gatsby-plugin-manifest`,
@@ -24,5 +24,19 @@ module.exports = {
                 icon: './static/favicon/favicon.png',
             },
         },
+        `gatsby-plugin-mdx`,
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `blog`,
+                path: `${__dirname}/blog`,
+            },
+        },
+        // {
+        //     resolve: `gatsby-plugin-page-creator`,
+        //     options: {
+        //         path: `${__dirname}/src/blogs`,
+        //     },
+        // },
     ],
 };

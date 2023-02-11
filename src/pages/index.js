@@ -1,6 +1,5 @@
 import React from 'react';
 import IntroPanel from 'components/panels/intro-panel/IntroPanel';
-import { SEO } from 'components/common';
 import Skills from 'components/panels/skills/Skills';
 import Education from 'components/panels/educations/Education';
 import SkillsMap from 'components/panels/skills-map/SkillsMap';
@@ -8,10 +7,12 @@ import WorkExperience from 'components/panels/work-experience/WorkExperience';
 import Certifications from 'components/panels/certifications/Certifications';
 import * as styles from './pages.module.scss';
 import Footer from 'components/panels/footer/Footer';
+import Layout from 'components/Layout';
+import Seo from 'components/Seo';
+import config from 'config/config';
 
-const App = () => (
-    <div>
-        <SEO />
+const IndexPage = () => (
+    <Layout>
         <IntroPanel /> <br />
         <section>
             <h1 className={styles.sectionTitle}>Skills Summary</h1>
@@ -34,7 +35,9 @@ const App = () => (
             <Certifications />
         </section>
         <Footer />
-    </div>
+    </Layout>
 );
 
-export default App;
+export const Head = () => <Seo title={config.defaultTitle} />;
+
+export default IndexPage;
