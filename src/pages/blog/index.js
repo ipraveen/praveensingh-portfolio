@@ -1,31 +1,19 @@
 import * as React from 'react';
-import Layout from 'components/layout';
-import { Link, graphql } from 'gatsby';
-import Seo from 'components/Seo';
+import { AppLayout } from 'components/layout';
+import { graphql } from 'gatsby';
+import SEO from 'components/SEO';
+import BlogPage from 'components/pages/BlogPage/BlogPage';
 
-const BlogPage = ({ data }) => {
+const BlogRoutePage = ({ data }) => {
     return (
-        <Layout pageTitle="My Blog Posts">
-            {data.allMdx.nodes.map((node) => (
-                <article key={node.id}>
-                    <h2>
-                        <Link to={`/blog/${node.frontmatter.slug}`}>{node.frontmatter.title}</Link>
-                    </h2>
-                    <p>Posted: {node.frontmatter.date}</p>
-                    <p>{node.excerpt}</p>
-                </article>
-            ))}
-        </Layout>
+        <AppLayout hideHeader={true}>
+            <BlogPage data={data} />
+        </AppLayout>
     );
 };
 
 export const query = graphql`
     query {
-        allFile {
-            nodes {
-                name
-            }
-        }
         allMdx(sort: { frontmatter: { date: DESC } }) {
             nodes {
                 frontmatter {
@@ -40,6 +28,6 @@ export const query = graphql`
     }
 `;
 
-// export const Head = () => <Seo title="My Blog Posts" />;
+export const Head = () => <SEO title="Blogs | praveensingh.net" />;
 
-export default BlogPage;
+export default BlogRoutePage;

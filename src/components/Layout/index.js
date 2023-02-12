@@ -1,3 +1,4 @@
-import Layout from './Layout';
+import AppLayout from './AppLayout';
+import BlogLayout from './BlogLayout';
 
-export default Layout;
+export { AppLayout, BlogLayout };

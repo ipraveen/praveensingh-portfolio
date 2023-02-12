@@ -1,14 +1,14 @@
 import * as React from 'react';
-import Layout from '../../components/layout';
+import { BlogLayout } from 'components/layout';
 import { graphql } from 'gatsby';
-import Seo from '../../components/seo';
+import Seo from '../../components/SEO';
+import BlogProvider from 'components/blog/BlogProvider';
 
 const BlogPost = ({ data, children }) => {
     return (
-        <Layout pageTitle={data.mdx.frontmatter.title}>
-            <p>{data.mdx.frontmatter.date}</p>
-            {children}
-        </Layout>
+        <BlogLayout>
+            <BlogProvider frontmatter={data.mdx.frontmatter}>{children}</BlogProvider>
+        </BlogLayout>
     );
 };
 
@@ -18,11 +18,15 @@ export const query = graphql`
             frontmatter {
                 title
                 date(formatString: "MMMM D, YYYY")
+                banner
+                subTitle
             }
         }
     }
 `;
 
-// export const Head = () => <Seo title="Super Cool Blog Posts" />
+export const Head = ({ data }) => {
+    return <Seo title={`${data.mdx.frontmatter.title} | Blog`} />;
+};
 
 export default BlogPost;

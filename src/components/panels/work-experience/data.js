@@ -1,21 +1,21 @@
 export const data = [
     {
-        img: 'images/exp/intuit.jpeg',
+        img: 'intuit.jpeg',
         alt: 'Intuit',
         color: '#3c77c9',
     },
     {
-        img: 'images/exp/canva.png',
+        img: 'canva.png',
         alt: 'Canva',
         color: '#f0941d',
     },
     {
-        img: 'images/exp/bt.jpeg',
+        img: 'bt.jpeg',
         alt: 'BT',
         color: '#5314af',
     },
     {
-        img: 'images/exp/nokia.png',
+        img: 'nokia.png',
         alt: 'Nokia',
         color: '#234190',
     },

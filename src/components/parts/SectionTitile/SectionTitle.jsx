@@ -1,4 +1,7 @@
-.section-title {
+import React from 'react';
+import styled from 'styled-components';
+
+const Title = styled.h1`
     text-align: center;
     margin-top: 4rem;
     font-size: 22px;
@@ -19,4 +22,10 @@
         background-color: #ef4b6c;
         transform: translateX(-50%);
     }
+`;
+
+function SectionTitle({ children }) {
+    return <Title>{children}</Title>;
 }
+
+export default SectionTitle;

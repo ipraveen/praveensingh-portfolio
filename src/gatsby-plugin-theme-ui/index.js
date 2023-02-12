@@ -1,36 +1,22 @@
-// import { deep, swiss } from '@theme-ui/presets';
-// // import nightOwl from '@theme-ui/prism/presets/night-owl.json';
-// import prismTheme from '@theme-ui/prism/presets/dracula.json';
+import codeTheme from '@theme-ui/prism/presets/oceanic-next.json';
 
-// const theme = {
-//     ...swiss,
-//     colors: {
-//         ...swiss.colors,
-//         modes: {
-//             dark: {
-//                 ...deep.colors,
-//             },
-//         },
-//     },
+/*
+# Dark
+oceanic-next.json
+vs-dark.json
+prism-twilight.json
 
-//     styles: {
-//         ...swiss.styles,
-//         code: {
-//             ...prismTheme,
-//         },
-        
-//     },
-// };
+prism-okaidia.json
 
-// export default theme;
+# Light
+github.json
 
-
-import nightOwl from '@theme-ui/prism/presets/night-owl'
+*/
 
 const theme = {
   styles: {
     pre: {
-      ...nightOwl,
+      ...codeTheme,
     },
   },
 }

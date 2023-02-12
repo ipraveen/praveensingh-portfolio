@@ -1,25 +1,17 @@
 import React from 'react';
-import Header from '../header/Header';
+import Header from '../../layout/header/Header';
 import * as styles from './intro.module.scss';
-import SocialList from 'components/common/social/SocialList';
-import Avatar from 'components/panels/avatar/Avatar';
-import FloatingSquare from '../../backgrounds/floating-square/FloatingSquare';
-import config from 'config/config';
 
-const IntroPanel = () => {
+import FloatingSquare from '../../backgrounds/floating-square/FloatingSquare';
+// import config from 'config/config';
+
+const IntroPanel = ({ children, mode = 'lg' }) => {
     return (
         <div className={styles.intro}>
             <FloatingSquare />
-            <Header />
+            <Header transparent={true} />
             <div className="container">
-                <div className={styles.introWrapper}>
-                    <div className={styles.content}>
-                        <h1>Hi, I'm Praveen Singh</h1>
-                        <p dangerouslySetInnerHTML={{ __html: config.defaultDescription }} />
-                        <SocialList />
-                    </div>
-                    <Avatar />
-                </div>
+                {children}
                 <div className={styles.wave} />
             </div>
         </div>

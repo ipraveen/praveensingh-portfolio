@@ -9,13 +9,20 @@ module.exports = {
         description: config.defaultDescription,
         author: config.author,
         siteUrl: 'https://praveensingh.net',
+        twitterUsername: 'i_praveensingh',
     },
     plugins: [
         'gatsby-plugin-sass',
-        'gatsby-plugin-react-helmet',
         'gatsby-plugin-sitemap',
         `gatsby-plugin-theme-ui`,
         'gatsby-plugin-offline',
+        `gatsby-plugin-styled-components`,
+        `gatsby-plugin-sharp`,
+        'gatsby-plugin-material-ui',
+        `gatsby-transformer-sharp`,
+        `gatsby-transformer-remark`,
+        'gatsby-plugin-postcss',
+        `gatsby-plugin-mdx-embed`,
         {
             resolve: `gatsby-plugin-manifest`,
             options: {
@@ -24,7 +31,19 @@ module.exports = {
                 icon: './static/favicon/favicon.png',
             },
         },
-        `gatsby-plugin-mdx`,
+        {
+            resolve: `gatsby-plugin-mdx`,
+            options: {
+                gatsbyRemarkPlugins: [
+                    {
+                        resolve: `gatsby-remark-images`,
+                        options: {
+                            maxWidth: 1200,
+                        },
+                    },
+                ],
+            },
+        },
         {
             resolve: `gatsby-source-filesystem`,
             options: {
@@ -32,6 +51,7 @@ module.exports = {
                 path: `${__dirname}/blog`,
             },
         },
+
         // {
         //     resolve: `gatsby-plugin-page-creator`,
         //     options: {

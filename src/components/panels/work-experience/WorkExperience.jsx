@@ -6,8 +6,8 @@ const Education = () => (
     <div className="container">
         <div className={styles.items}>
             {data.map(({ img, color, alt }, index) => (
-                <div className={styles.item} style={{ backgroundColor: `${color}4a`, animationDelay: `${index}s` }}>
-                    <img alt={alt} src={img} />
+                <div key={index} className={styles.item} style={{ backgroundColor: `${color}4a`, animationDelay: `${index}s` }}>
+                    <img alt={alt} src={`/images/exp/${img}`}/>
                 </div>
             ))}
         </div>

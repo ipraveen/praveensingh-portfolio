@@ -1,17 +1,12 @@
 import React from 'react';
-import * as styles from './footer.module.scss';
 import SocialList from 'components/common/social/SocialList';
 
 const Footer = () => (
-    <div className={styles.footer}>
+    <div className="p-8 bg-gray-100 mt-10">
         <div className="container">
-            <div className={styles.footerContent}>
-                <div className={styles.details}>
-                    <span></span>
+                <div className="flex justify-center items-center text-base text-slate-500 w-full">
                     <span>praveensingh.net © All rights are reserved | {new Date().getFullYear()}</span>
                 </div>
-                <SocialList />
-            </div>
         </div>
     </div>
 );
