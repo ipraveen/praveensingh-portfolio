@@ -3,6 +3,7 @@ import React from 'react';
 import SocialList from 'components/common/social/SocialList';
 import Avatar from 'components/panels/avatar/Avatar';
 import styled from 'styled-components';
+import AppContainer from 'components/layout/AppContainer';
 
 const Container = styled.div`
     padding: 1rem 0;
@@ -48,19 +49,20 @@ const Container = styled.div`
 
 function ProfilePageIntro() {
     return (
-        <Container>
-            <Avatar />
-            <div className="content">
-                <h1>Hi, I'm Praveen Singh</h1>
-                <p
-                    dangerouslySetInnerHTML={{
-                        __html: `I'm a <b>Full Stack Engineer</b> with a passion for Frontend Development and large-scale System Design. I have been developing highly scalable, data-driven web applications for <b>15+</b> years and have led multiple full-size development teams as a Tech Lead.`,
-                    }}
-                />
-                <SocialList />
-            </div>
-            
-        </Container>
+        <AppContainer>
+            <Container>
+                <Avatar />
+                <div className="content">
+                    <h1>Hi, I'm Praveen Singh</h1>
+                    <p
+                        dangerouslySetInnerHTML={{
+                            __html: `I'm a <b>Full Stack Engineer</b> with a passion for Frontend Development and large-scale System Design. I have been developing highly scalable, data-driven web applications for <b>15+</b> years and have led multiple full-size development teams as a Tech Lead.`,
+                        }}
+                    />
+                    <SocialList />
+                </div>
+            </Container>
+        </AppContainer>
     );
 }
 

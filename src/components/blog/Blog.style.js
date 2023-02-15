@@ -18,4 +18,12 @@ export const BlogPage = styled.article`
     }
 `;
 
-export const BlogContainer = styled.div``;
+export const BlogContainer = styled.div`
+    /* grid-gap: 3rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-areas: 'main toc';
+    grid-template-columns: minmax(0, 18rem) minmax(0, 50rem) minmax(0, 22rem);
+    padding-left: 1rem;
+    padding-right: 1rem; */
+`;

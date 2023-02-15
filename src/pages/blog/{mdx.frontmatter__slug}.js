@@ -5,9 +5,12 @@ import Seo from '../../components/SEO';
 import BlogProvider from 'components/blog/BlogProvider';
 
 const BlogPost = ({ data, children }) => {
+    const { frontmatter, tableOfContents } = data.mdx;
     return (
         <BlogLayout>
-            <BlogProvider frontmatter={data.mdx.frontmatter}>{children}</BlogProvider>
+            <BlogProvider frontmatter={frontmatter} tableOfContents={tableOfContents}>
+                {children}
+            </BlogProvider>
         </BlogLayout>
     );
 };
@@ -17,10 +20,12 @@ export const query = graphql`
         mdx(id: { eq: $id }) {
             frontmatter {
                 title
-                date(formatString: "MMMM D, YYYY")
+                date(formatString: "MMM D, YYYY")
                 banner
                 subTitle
+                keys
             }
+            tableOfContents
         }
     }
 `;

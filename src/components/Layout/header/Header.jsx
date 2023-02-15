@@ -3,6 +3,7 @@ import Logo from './Logo';
 import NavLinks from './NavLinks';
 import * as styles from './header.module.scss';
 import styled, { css } from 'styled-components';
+import AppContainer from 'components/layout/AppContainer';
 
 const Container = styled.header`
     ${({ transparent }) =>
@@ -22,12 +23,12 @@ const Container = styled.header`
 function Header({ transparent }) {
     return (
         <Container transparent={transparent}>
-            <div className="container">
+            <AppContainer className="max-w-screen-xl mx-auto">
                 <div className={styles.header}>
                     <Logo />
                     <NavLinks />
                 </div>
-            </div>
+            </AppContainer>
         </Container>
     );
 }

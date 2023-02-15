@@ -2,7 +2,6 @@ import React from 'react';
 
 import { AppLayout } from 'components/layout';
 import SEO from 'components/SEO';
-import config from 'config/config';
 
 import { graphql } from 'gatsby';
 import HomePage from 'components/pages/HomePage/HomePage';
@@ -18,9 +17,11 @@ export const query = graphql`
         allMdx(sort: { frontmatter: { date: DESC } }) {
             nodes {
                 frontmatter {
-                    date(formatString: "MMMM DD, YYYY")
+                    date(formatString: "MMM DD, YYYY")
                     title
+                    description
                     slug
+                    keys
                 }
                 id
                 excerpt

@@ -6,7 +6,7 @@ const BlogLayout = ({ children, showHeader = true }) => {
     return (
         <div>
             {showHeader && <Header />}
-            <div>{children}</div>
+            <div className="p-4">{children}</div>
             <Footer />
         </div>
     );

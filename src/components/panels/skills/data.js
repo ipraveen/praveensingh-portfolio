@@ -1,25 +1,26 @@
-// import { faUsers, faLaptopCode, faSitemap } from '@fortawesome/free-solid-svg-icons';
-
 export const skills = [
+    {
+        id: 1,
+        type: 'Tech Lead',
+        info: '15+ Years of Experience',
+        icon: 'leader-1.jpeg',
+    },
     {
         id: 2,
         type: 'Frontend Engineer',
-        info: 'JavaScript, React, TypeScript, Micro UI, etc',
-        // icon: faLaptopCode,
-        animation: 'fromLeft',
-    },
-    {
-        id: 1,
-        type: 'Tech Lead & Architect',
-        info: '15 Years of Development Experience',
-       // icon: faUsers,
-        animation: 'fromBottom',
+        info: 'JavaScript, TypeScript, React',
+        icon: 'frontend.png',
     },
     {
         id: 3,
         type: 'Backend Engineer',
-        info: 'NodeJs, AWS, Kubernetes, Micro Services',
-      //  icon: faSitemap,
-        animation: 'fromRight',
+        info: 'Microservices, Spring, NodeJs',
+        icon: 'backend.png',
+    },
+    {
+        id: 3,
+        type: 'Cloud Engineering',
+        info: 'AWS, Kubernetes, Docker',
+        icon: 'cloud-1.jpg',
     },
 ];

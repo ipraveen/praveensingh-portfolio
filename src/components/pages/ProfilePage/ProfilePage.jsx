@@ -16,25 +16,25 @@ function ProfilePage({ data }) {
             </IntroPanel>
             <br />
             <section>
-            <SectionTitle>Skills Summary</SectionTitle>
-            <Skills />
-        </section>
-        <section>
-            <SectionTitle>Professional Experience</SectionTitle>
-            <WorkExperience />
-        </section>
-        <section>
-            <SectionTitle>Technologies Experience</SectionTitle>
-            <SkillsMap />
-        </section>
-        <section>
-            <SectionTitle>Educations</SectionTitle>
-            <Education />
-        </section>
-        <section>
-            <SectionTitle>Certifications</SectionTitle>
-            <Certifications />
-        </section>
+                <SectionTitle>Skills Summary</SectionTitle>
+                <Skills />
+            </section>
+            <section>
+                <SectionTitle>Professional Experience</SectionTitle>
+                <WorkExperience />
+            </section>
+            <section>
+                <SectionTitle>Technologies Experience</SectionTitle>
+                <SkillsMap />
+            </section>
+            <section>
+                <SectionTitle>Educations</SectionTitle>
+                <Education />
+            </section>
+            <section>
+                <SectionTitle>Certifications</SectionTitle>
+                <Certifications />
+            </section>
         </div>
     );
 }

@@ -1,14 +1,17 @@
 import * as React from 'react';
+import styled from 'styled-components';
 import Footer from './footer/Footer';
 import Header from './header/Header';
 
+const Container = styled.div``;
+
 const Layout = ({ children, hideHeader = false }) => {
     return (
-        <div>
-            {!hideHeader && <Header transparent={false}/>}
-            {children}
+        <Container>
+            {!hideHeader && <Header transparent={false} />}
+            <main className="main">{children}</main>
             <Footer />
-        </div>
+        </Container>
     );
 };
 
