@@ -1,5 +1,10 @@
 export const data = [
     {
+        img: 'twilio.svg',
+        alt: 'Twilio',
+        color: '#d61f1f',
+    },
+    {
         img: 'intuit.jpeg',
         alt: 'Intuit',
         color: '#3c77c9',

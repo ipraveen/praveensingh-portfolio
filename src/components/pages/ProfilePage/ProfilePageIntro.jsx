@@ -11,13 +11,7 @@ const Container = styled.div`
     align-items: center;
     justify-content: space-between;
     gap: 3rem;
-
-    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
+    flex-wrap: wrap;
 
     .content {
         flex: 2;
@@ -53,10 +47,17 @@ function ProfilePageIntro() {
             <Container>
                 <Avatar />
                 <div className="content">
-                    <h1>Hi, I'm Praveen Singh</h1>
+                    <h1 className='mb-2'>Hi, I'm Praveen Singh</h1>
+                    <h2> </h2>
                     <p
                         dangerouslySetInnerHTML={{
-                            __html: `I'm a <b>Full Stack Engineer</b> with a passion for Frontend Development and large-scale System Design. I have been developing highly scalable, data-driven web applications for <b>15+</b> years and have led multiple full-size development teams as a Tech Lead.`,
+                            __html: `I'm a <b>Full Stack Engineer</b>, love solving complex engineering problems, and enjoy exploring the system design of large enterprise applications. 
+                            I'm passionate about <b>Frontend Development, Cloud Engineering, and Microservices.</b>`,
+                        }}
+                    />
+                    <p
+                        dangerouslySetInnerHTML={{
+                            __html: `I've around <b>16+</b> years of Industry experience in developing and designing scalable enterprise applications and the privilege to work for a few best companies in the Industry, like <b>Intuit, Canva, and Nokia.</b>`,
                         }}
                     />
                     <SocialList />

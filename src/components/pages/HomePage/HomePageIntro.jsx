@@ -8,10 +8,10 @@ const Container = styled.div`
     align-items: center;
     justify-content: space-between;
     gap: 3rem;
+    flex-wrap: wrap;
 
     @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
         flex-direction: column;
-        flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
         text-align: center;
@@ -48,12 +48,14 @@ const Container = styled.div`
 function HomePageIntro() {
     return (
         <Container>
-            <div className="content">
             <Avatar />
-                <h1>Welcome!</h1>
+            <div className="content">
+                <h1>Hi, I'm Praveen Singh</h1>
+                <h2> </h2>
                 <p
                     dangerouslySetInnerHTML={{
-                        __html: `Welcome,I'm a <b>Full Stack Engineer</b> with a passion for Frontend Development and large-scale System Design. I have been developing highly scalable, data-driven web applications for <b>15+</b> years and have led multiple full-size development teams as a Tech Lead.`,
+                        __html: `I'm a <b>Full Stack Engineer</b>, love solving complex engineering problems, and enjoy exploring the system design of large enterprise applications. 
+                        I'm passionate about <b>Frontend Development, Cloud Engineering, and Microservices.</b>`,
                     }}
                 />
             </div>
