@@ -21,6 +21,7 @@ module.exports = {
         'gatsby-plugin-material-ui',
         `gatsby-transformer-sharp`,
         `gatsby-transformer-remark`,
+        'gatsby-plugin-postcss',
         `gatsby-plugin-mdx-embed`,
         {
             resolve: `gatsby-plugin-manifest`,
