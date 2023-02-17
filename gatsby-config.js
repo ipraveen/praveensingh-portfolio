@@ -1,4 +1,5 @@
 const config = require('./src/config/config');
+const path = require("path");
 
 require('dotenv').config({
     path: `.env.${process.env.NODE_ENV}`,
@@ -14,7 +15,6 @@ module.exports = {
     plugins: [
         'gatsby-plugin-sass',
         'gatsby-plugin-sitemap',
-        "gatsby-plugin-root-import"
         `gatsby-plugin-theme-ui`,
         'gatsby-plugin-offline',
         `gatsby-plugin-styled-components`,
@@ -53,12 +53,20 @@ module.exports = {
                 path: `${__dirname}/blog`,
             },
         },
-
-        // {
-        //     resolve: `gatsby-plugin-page-creator`,
-        //     options: {
-        //         path: `${__dirname}/src/blogs`,
-        //     },
-        // },
+        {
+            resolve: `gatsby-plugin-alias-imports`,
+            options: {
+              alias: {
+                "components": "src/components",
+                "config": "src/config",
+                "hooks": "src/hooks",
+                "assets": "src/assets",
+              },
+              extensions: [
+                "js",
+                "jsx",
+              ]
+            }
+          }
     ],
 };

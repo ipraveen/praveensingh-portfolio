@@ -40,7 +40,7 @@ function useActiveId(itemIds) {
 }
 
 function renderItems(items) {
-    const hash = window.location.hash;
+    const hash = typeof window !== 'undefined' && window.location.hash;
     return (
         <ol className="list-none text-sm text-slate-500">
             {items.map((item) => {

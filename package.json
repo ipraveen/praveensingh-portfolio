@@ -17,6 +17,8 @@
     },
     "dependencies": {
         "@deckdeckgo/highlight-code": "^4.4.0",
+        "@emotion/react": "^11.10.6",
+        "@emotion/styled": "^11.10.6",
         "@fontsource/roboto": "^4.5.8",
         "@mdx-js/mdx": "^2.2.1",
         "@mdx-js/react": "^2.3.0",
@@ -28,6 +30,7 @@
         "autoprefixer": "^10.4.13",
         "babel-plugin-styled-components": "^2.0.7",
         "gatsby": "5.3.3",
+        "gatsby-plugin-alias-imports": "^1.0.5",
         "gatsby-plugin-google-analytics": "^5.3.0",
         "gatsby-plugin-image": "^3.3.2",
         "gatsby-plugin-manifest": "5.3.1",
@@ -68,8 +71,6 @@
         "theme-ui": "^0.15.4"
     },
     "devDependencies": {
-        "@emotion/react": "^11.10.5",
-        "@emotion/styled": "^11.10.5",
         "@types/node": "^17.0.45",
         "@types/react": "^18.0.26",
         "@types/react-dom": "^18.0.10",
