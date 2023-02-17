@@ -14,7 +14,7 @@ function BlogProvider({ children, frontmatter, tableOfContents }) {
             <BlogPageBanner frontmatter={frontmatter} />
             <div className="grid grid-cols-12 mx-auto max-w-screen-xl gap-2">
                 <BlogPage className="col-span-12 md:col-span-9">{children}</BlogPage>
-                <TableOfContents className="invisible md:visible md:col-span-3" items={tableOfContents.items} />
+                <TableOfContents className="invisible lg:visible md:col-span-3" items={tableOfContents.items} />
             </div>
         </MDXProvider>
     );
