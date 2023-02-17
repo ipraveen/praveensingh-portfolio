@@ -14,6 +14,7 @@ module.exports = {
     plugins: [
         'gatsby-plugin-sass',
         'gatsby-plugin-sitemap',
+        "gatsby-plugin-root-import"
         `gatsby-plugin-theme-ui`,
         'gatsby-plugin-offline',
         `gatsby-plugin-styled-components`,
