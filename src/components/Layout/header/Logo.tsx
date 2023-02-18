@@ -2,7 +2,7 @@ import { Link } from 'gatsby';
 import React from 'react';
 import * as styles from './header.module.scss';
 
-function Logo(props) {
+function Logo() {
     return (
         <Link to="/">
             <div className={styles.logo}>

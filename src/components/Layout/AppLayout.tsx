@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import Footer from './Footer';
-import Header from './Header';
+import Header from './header/Header';
 
 const Container = styled.div``;
 
