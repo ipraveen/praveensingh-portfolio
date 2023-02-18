@@ -1,7 +1,7 @@
 import * as React from 'react';
-import AppLayout from 'components/layout/AppLayout';
 import { graphql } from 'gatsby';
 import SEO from '../../components/SEO';
+import AppLayout from 'components/layout-dir/AppLayout';
 import BlogPage from '../../components/pages/BlogPage/BlogPage';
 
 const BlogRoutePage = ({ data }) => {
