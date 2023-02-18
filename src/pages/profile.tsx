@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { AppLayout } from 'components/layout/Layout';
+import AppLayout from 'components/layout/AppLayout';
 import SEO from 'components/SEO';
 import config from 'config/config';
 import ProfilePage from 'components/pages/ProfilePage';

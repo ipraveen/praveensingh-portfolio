@@ -1,4 +1,4 @@
-module.exports = {
+const config = {
     defaultTitle: 'praveensingh.net',
     defaultDescription: `I'm a <b>Full Stack Engineer</b> with a passion for Frontend Development and large-scale System Design. I have been developing highly scalable, data-driven web applications for <b>15+</b> years and have led multiple full-size development teams as a Tech Lead.`,
     author: 'Praveen Singh',
@@ -18,3 +18,5 @@ module.exports = {
     },
     foundingDate: '2021',
 };
+
+export default config;
