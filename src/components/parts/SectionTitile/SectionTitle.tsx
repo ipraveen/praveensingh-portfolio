@@ -10,7 +10,7 @@ const Title = styled.h1`
     font-weight: 400;
     color: var(--clr-theme-text-light);
     position: relative;
-    padding: 20px 0;
+    padding: .5rem 0;
 
     &:before {
         width: 40px;

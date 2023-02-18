@@ -15,7 +15,7 @@ function Skills({variant} : Props) {
                         key={id}
                         className="bg-white rounded-md px-6 py-4 border border-gray-200 border-solid flex flex-col justify- items-center text-center"
                     >
-                        <div className={`mb-4 grid place-content-center ${variant === 'small'? 'w-16 h-16': 'w-48 h-48'} `}>
+                        <div className={`mb-4 grid place-content-center ${variant === 'small'? 'w-36 h-36': 'w-48 h-48'} `}>
                             <img className="object-fill" src={`/images/${icon}`} alt="React Logo" />
                         </div>
                         <div>

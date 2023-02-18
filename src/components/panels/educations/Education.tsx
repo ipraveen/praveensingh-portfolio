@@ -21,7 +21,7 @@ const list = [
 
 const Education = () => {
     return (
-        <div className="container grid grid-cols-1 sm:grid-cols-2">
+        <div className=" grid grid-cols-1 sm:grid-cols-2 max-w-screen-lg mx-auto">
             {list.map(({ degree, branch, image, college, duration }) => (
                 <section key={degree} className="card flex flex-col justify-center items-center text-center">
                     <h1 className='my-0 text-2xl text-theme-800'>{degree}</h1>
