@@ -37,7 +37,6 @@ const Container = styled.div`
         }
 
         p {
-            color: var(--clr-gray-100);
             @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
                 font-size: 0.8rem;
             }
@@ -51,6 +50,7 @@ function BlogPageIntro() {
             <div className="content">
                 <h1>Welcome!</h1>
                 <p
+                 className='text-gray-100'
                     dangerouslySetInnerHTML={{
                         __html: `Welcome,I'm a <b>Full Stack Engineer</b> with a passion for Frontend Development and large-scale System Design. I have been developing highly scalable, data-driven web applications for <b>15+</b> years and have led multiple full-size development teams as a Tech Lead.`,
                     }}

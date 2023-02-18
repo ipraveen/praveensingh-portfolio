@@ -5,9 +5,9 @@
     "version": "3.0.0",
     "author": "Praveen Singh",
     "scripts": {
-        "start": "gatsby develop",
+        "start": "NODE_ENV=development && gatsby develop",
         "develop": "gatsby develop",
-        "build": "gatsby build",
+        "build ": "NODE_ENV=production && gatsby build",
         "serve": "gatsby serve",
         "clean": "gatsby clean",
         "clean:install": "npm cache clean -f && rm -rf node_modules/ && npm install"

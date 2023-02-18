@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Title = styled.h1`
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 2rem;
     font-size: 22px;
     line-height: 1.63;
     letter-spacing: 0.5px;

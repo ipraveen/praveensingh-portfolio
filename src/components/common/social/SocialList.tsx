@@ -10,10 +10,10 @@ const list = [
         url: 'https://github.com/ipraveen',
         Icon: GitHub,
     },
-    {
-        url: 'https://twitter.com/i_praveensingh',
-        Icon: Twitter,
-    },
+    // {
+    //     url: 'https://twitter.com/i_praveensingh',
+    //     Icon: Twitter,
+    // },
     {
         url: 'https://www.linkedin.com/in/praveenkumarsingh84/',
         Icon: LinkedIn,

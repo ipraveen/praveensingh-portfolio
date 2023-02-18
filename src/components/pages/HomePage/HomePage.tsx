@@ -13,7 +13,7 @@ function HomePage({ data }) {
             </IntroPanel>
             <section>
                 <SectionTitle>What I do</SectionTitle>
-                <Skills />
+                <Skills variant="small"/>
             </section>
             <section>
                 <SectionTitle>Blogs</SectionTitle>

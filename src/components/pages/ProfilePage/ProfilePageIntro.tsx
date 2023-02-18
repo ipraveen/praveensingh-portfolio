@@ -33,7 +33,6 @@ const Container = styled.div`
         }
 
         p {
-            color: var(--clr-gray-100);
             @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
                 font-size: 0.8rem;
             }
@@ -50,12 +49,14 @@ function ProfilePageIntro() {
                     <h1 className='mb-2'>Hi, I'm Praveen Singh</h1>
                     <h2> </h2>
                     <p
+                    className='text-gray-100'
                         dangerouslySetInnerHTML={{
                             __html: `I'm a <b>Full Stack Engineer</b>, love solving complex engineering problems, and enjoy exploring the system design of large enterprise applications. 
                             I'm passionate about <b>Frontend Development, Cloud Engineering, and Microservices.</b>`,
                         }}
                     />
                     <p
+                     className='text-gray-100'
                         dangerouslySetInnerHTML={{
                             __html: `I've around <b>16+</b> years of Industry experience in developing and designing scalable enterprise applications and the privilege to work for a few best companies in the Industry, like <b>Intuit, Canva, and Nokia.</b>`,
                         }}

@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Avatar from 'components/panels/avatar/Avatar';
+import SocialList from 'components/common/social/SocialList';
 
 const Container = styled.div`
     padding: 1rem 0;
@@ -37,7 +38,6 @@ const Container = styled.div`
         }
 
         p {
-            color: var(--clr-gray-100);
             @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
                 font-size: 0.8rem;
             }
@@ -53,11 +53,13 @@ function HomePageIntro() {
                 <h1>Hi, I'm Praveen Singh</h1>
                 <h2> </h2>
                 <p
+                className='text-gray-100'
                     dangerouslySetInnerHTML={{
                         __html: `I'm a <b>Full Stack Engineer</b>, love solving complex engineering problems, and enjoy exploring the system design of large enterprise applications. 
                         I'm passionate about <b>Frontend Development, Cloud Engineering, and Microservices.</b>`,
                     }}
                 />
+                <SocialList />
             </div>
         </Container>
     );
