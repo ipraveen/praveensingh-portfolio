@@ -53,20 +53,5 @@ module.exports = {
                 path: `${__dirname}/blog`,
             },
         },
-        {
-            resolve: `gatsby-plugin-alias-imports`,
-            options: {
-              alias: {
-                "components": "src/components",
-                "config": "src/config",
-                "hooks": "src/hooks",
-                "assets": "src/assets",
-              },
-              extensions: [
-                "js",
-                "jsx",
-              ]
-            }
-          }
     ],
 };

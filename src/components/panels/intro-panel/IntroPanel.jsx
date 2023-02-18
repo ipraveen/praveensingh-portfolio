@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../../layout/header/Header';
+import Header from '../../layout/Header';
 import * as styles from './intro.module.scss';
 
 import FloatingSquare from '../../backgrounds/floating-square/FloatingSquare';
