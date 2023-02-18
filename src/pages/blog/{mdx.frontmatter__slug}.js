@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { BlogLayout } from 'components/layout/Layout';
+import { BlogLayout } from '../../components/layout/Layout';
 import { graphql } from 'gatsby';
 import Seo from '../../components/SEO';
-import BlogProvider from 'components/blog/BlogProvider';
+import BlogProvider from '../../components/blog/BlogProvider';
 
 const BlogPost = ({ data, children }) => {
     const { frontmatter, tableOfContents } = data.mdx;
