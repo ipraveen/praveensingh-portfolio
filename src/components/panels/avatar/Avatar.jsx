@@ -1,5 +1,6 @@
 import React from 'react';
 import dev from 'assets/images/praveen.png';
+import tw from "tailwind.macro";
 
 const Avatar = ({ size = 'lg' }) => {
     return (
