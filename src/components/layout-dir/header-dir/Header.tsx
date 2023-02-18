@@ -3,7 +3,7 @@ import Logo from './Logo';
 import NavLinks from './NavLinks';
 import * as styles from './header.module.scss';
 import styled, { css } from 'styled-components';
-import AppContainer from 'components/layout/AppContainer';
+import AppContainer from 'components/layout-dir/AppContainer';
 
 const Container = styled.header`
     ${({ transparent }) =>

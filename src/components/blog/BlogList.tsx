@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import Tag from 'components/parts/Tag/Tag';
-import AppContainer from 'components/layout/AppContainer';
+import AppContainer from 'components/layout-dir/AppContainer';
 
 function BlogList({ data }) {
     return (

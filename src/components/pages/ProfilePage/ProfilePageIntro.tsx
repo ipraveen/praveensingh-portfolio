@@ -3,7 +3,7 @@ import React from 'react';
 import SocialList from 'components/common/social/SocialList';
 import Avatar from 'components/panels/avatar/Avatar';
 import styled from 'styled-components';
-import AppContainer from 'components/layout/AppContainer';
+import AppContainer from 'components/layout-dir/AppContainer';
 
 const Container = styled.div`
     padding: 1rem 0;
