@@ -1,6 +1,6 @@
 ---
-title: "Debounce in JavaScript: Limitting the rate of the function call"
-description: "Debounce is a pattern to limit the rate at which a function can fire. it's also one of the most frequently asked JavaScript Interview questions as required a deep understanding of JavaScript asynchronous programming and closer. "
+title: "Debounce in JavaScript: Limiting the rate of the function call"
+description: "Debounce is a pattern to limit the rate at which a function can fire. It's also one of the most frequently asked JavaScript Interview questions as it requires a deep understanding of JavaScript asynchronous programming and closer. "
 date: "2022-05-14"
 slug: "javascript-debounce"
 keys: javascript, patterns, advanced, interview, performance
@@ -10,20 +10,20 @@ keys: javascript, patterns, advanced, interview, performance
 ![debounce intro](./images/javascript-debounce-intro.png)
 
 
-**Debounce** is a pattern to limit the rate at which a function can fire. it's also one of the most frequently asked JavaScript Interview questions as required a deep understanding of JavaScript asynchronous programming and closer.
+**Debounce** is a pattern to limit the rate at which a function can fire. Its also one of the most frequently asked JavaScript Interview questions, as it requires a deep understanding of JavaScript asynchronous programming and closer.
 
 # But why do we want to limit the rate of server calls?
 
-Consider the below situation
+Consider the below situation.
 
 ![debounce working](./images/javascript-debounce.drawio.png)
 
 ## Key Points:
-Google search is an interesting case of Debounce pattern. If you are designing this page, you may want to consider the following
+Google search is an interesting case of Debounce pattern. If you are designing this page, you may want to consider the following.
 
 1. On every meaningful full keyword, we want to provide autocomplete suggestions to the user.
-1. Providing suggestions too early, maybe at every keypress, would be meaningless. Also, it will put an unnecessary load on the server.
-1. Providing it too late would defeat the purpose of autocomplete suggestions.
+1. Providing suggestions too early, at every keypress, would be meaningless. Also, it will put an unnecessary load on the server.
+1. Providing it early enough would defeat the purpose of autocomplete suggestions.
 
 
 # Let's build Debounce
@@ -60,7 +60,7 @@ function debounce(func, wait) {
 ```
 
 
-## Search Component used on video Tutorial
+## Search Component used on Video Tutorial
 
 ```jsx
 import React, { useState } from 'react';
@@ -70,7 +70,7 @@ import { useCallback } from 'react';
 /**
  * Agenda:
  * [x] Delaying a function call
- * [x] Cancelling a function call, if new call happen before the wait expired.
+ * [x] Cancelling a function call, if a new call happens before the wait expired.
  * [x] Maintaining the Context.
  */
 
@@ -123,7 +123,7 @@ export default Search;
 
 ```
 
-## Search Class Component used on video Tutorial
+## Search Class Component used on Video Tutorial
 
 ```jsx
 import React from 'react';
@@ -132,7 +132,7 @@ import React from 'react';
 /**
  * Agenda:
  * [x] Delaying a function call
- * [x] Cancelling a function call, if new call happen before the wait.
+ * [x] Cancelling a function call, if a new call happens before the wait.
  * [x] Maintaining the Context.
  */
 
