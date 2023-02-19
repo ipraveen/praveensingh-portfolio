@@ -3,19 +3,20 @@ import styled from 'styled-components';
 
 const Container = styled.small`
     border-radius: 0.3rem;
-    font-size: 10px;
+    font-size: ${({variant}) => variant === 'small'? '10px': '.8rem'};
     vertical-align: middle;
-    padding: 1px .4rem;
+    padding: ${({variant}) => variant === 'small'? '1px .4rem': '.2rem .8rem'};
     text-align: center;
 `;
 
 interface Props{
     text: string;
+    variant?: 'large' | 'small';
 }
 
-function Tag({ text }: Props) {
+function Tag({ text, variant = 'small' }: Props) {
     return (
-        <Container className="bg-gray-500 text-white  uppercase grid place-content-center">{text}</Container>
+        <Container variant={variant} className="bg-gray-500 text-white  uppercase grid place-content-center">{text}</Container>
     );
 }
 
