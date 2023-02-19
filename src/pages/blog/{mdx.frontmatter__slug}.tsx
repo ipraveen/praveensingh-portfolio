@@ -23,7 +23,7 @@ export const query = graphql`
                 title
                 date(formatString: "MMM D, YYYY")
                 banner
-                subTitle
+                description
                 keys
             }
             tableOfContents
