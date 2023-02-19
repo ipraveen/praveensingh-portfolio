@@ -1,5 +1,5 @@
 import React from 'react';
-import HomePageIntro from './ProfilePageIntro';
+import HomePageIntro from 'components/pages/HomePage/HomePageIntro';
 import IntroPanel from 'components/panels/intro-panel/IntroPanel';
 import Skills from 'components/panels/skills/Skills';
 import Education from 'components/panels/educations/Education';
@@ -12,7 +12,8 @@ function ProfilePage({ data }) {
     return (
         <div>
             <IntroPanel mode="sm">
-                <HomePageIntro />
+                <HomePageIntro text={`I'm a <b>Full Stack Engineer</b>, love solving complex engineering problems, and enjoy exploring the system design of large enterprise applications. 
+                            I'm passionate about <b>Frontend Development, Cloud Engineering, and Microservices.</b> <br/> <br/>I've around <b>16+</b> years of Industry experience in developing and designing scalable enterprise applications and the privilege to work for a few best companies in the Industry, like <b>Intuit, Canva, and Nokia.</b>`}/>
             </IntroPanel>
             <br />
             <section>

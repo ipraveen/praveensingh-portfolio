@@ -21,7 +21,7 @@ const list = [
 ];
 
 const SocialList = ({ color = 'inherit' }) => (
-    <div className="flex gap-4">
+    <div className="flex gap-4 items-center justify-center md:justify-start">
         {list.map(({ url, Icon }) => (
             <a className=" text-gray-100" key={url} target="_blank" rel="noreferrer" href={url}>
                 <Icon sx={{ fontSize: 36, color }} />

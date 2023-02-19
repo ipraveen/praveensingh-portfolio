@@ -6,6 +6,7 @@ import styled, { css } from 'styled-components';
 import AppContainer from 'components/layout-dir/AppContainer';
 
 const Container = styled.header`
+padding: 0 1rem;
     ${({ transparent }) =>
         transparent === true
             ? css`

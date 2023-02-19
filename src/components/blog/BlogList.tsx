@@ -23,9 +23,9 @@ function BlogList({ data }) {
                             <p className="text-base text-slate-600 mt-1">{description}</p>
                         </div>
 
-                        <div className="flex gap-2 mb-0">
-                            {keys?.split(',').map((key) => (
-                                <Tag key={key} text={key.trim()} />
+                        <div className="flex gap-2 mb-0 flex-wrap">
+                            {keys?.split(',').map((item) => (
+                                <Tag key={item} text={item.trim()} />
                             ))}
                         </div>
                     </div>

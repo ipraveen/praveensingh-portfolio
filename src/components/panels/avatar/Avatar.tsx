@@ -1,9 +1,9 @@
 import React from 'react';
 import dev from 'assets/images/praveen.png';
 
-const Avatar = ({ size = 'lg' }) => {
+const Avatar = ({ className, size = 'lg' }) => {
     return (
-        <div>
+        <div className={`${className}` }>
             <img
                 className={`${
                     size === 'sm' ? 'h-10' : 'h-36'
