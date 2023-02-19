@@ -4,6 +4,7 @@
     background-size: contain;
     background-position: right top;
     background-repeat: no-repeat;
+    background: var(--clr-theme-light);
     background: radial-gradient(
         55.36% 221.46% at 23.59% 28.54%,
         var(--clr-theme-light) 1.6%,
@@ -12,7 +13,7 @@
     z-index: 100;
 
     @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
-        padding-bottom: 0;
+        padding-bottom: 1rem;
     }
 }
 
