@@ -9,7 +9,7 @@ function BlogPageBanner({ frontmatter }) {
                 <small className="text-gray-600">{date}</small>
             </div>
 
-            <h1 className="text-theme-800 text-5xl my-4">{title}</h1>
+            <h1 className="text-theme-800 text-2xl md:text-4xl lg:text-5xl my-4">{title}</h1>
         </div>
     );
 }
