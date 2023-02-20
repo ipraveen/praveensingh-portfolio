@@ -27,5 +27,4 @@ function BlogProvider({ children, frontmatter, tableOfContents }) {
     );
 }
 
-// className="grid grid-cols-1 mx-auto max-w-screen-md relative"
 export default BlogProvider;

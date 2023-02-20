@@ -5,6 +5,7 @@ const list = [
     {
         url: 'https://www.youtube.com/channel/UCpWyMAAKdvAUs6nSuelIgOA',
         Icon: YouTube,
+        fontSize: 44
     },
     {
         url: 'https://github.com/ipraveen',
@@ -22,9 +23,9 @@ const list = [
 
 const SocialList = ({ color = 'inherit' }) => (
     <div className="flex gap-4 items-center justify-center md:justify-start">
-        {list.map(({ url, Icon }) => (
+        {list.map(({ url, Icon, fontSize = 36 }) => (
             <a className="text-gray-100" key={url} target="_blank" rel="noreferrer" href={url}>
-                <Icon sx={{ fontSize: 36, color }} />
+                <Icon sx={{ fontSize, color }} />
             </a>
         ))}
     </div>
