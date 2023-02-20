@@ -1,33 +1,5 @@
 :root {
-    color-scheme: dark light; // we support both
-}
-
-@media (prefers-color-scheme: light) {
-    :root {
-        color-scheme: light; // Inform to browser.
-        --clr-theme-background: #ffffff;
-        --clr-theme-dark: #18616d;
-        --clr-theme-light: #037c8f;
-        --clr-theme-dark-extra: #055a68;
-        --clr-theme-text: slategray;
-        --clr-theme-text-light: gray;
-        --clr-theme-text-all: #000000;
-        --clr-theme-icon: #055a68;
-        --clr-light: 231 77% 90%;
-        --clr-white: #ffffff;
-        --clr-theme-card: #ffffff;
-        --clr-theme-card-hover: #e7e7e9;
-        --clr-yellow: #f5c32c;
-        --clr-orange: #fca61f;
-        --clr-black: #242d49;
-        --clr-gray: #788097;
-        --clr-gray-100: #d7d8db;
-    }
-
-  
-}
-
-:root body.dark-theme {
+    // color-scheme: dark light; // we support both
     color-scheme: light; // Inform to browser.
     --clr-theme-background: #ffffff;
     --clr-theme-dark: #18616d;
@@ -47,6 +19,54 @@
     --clr-gray: #788097;
     --clr-gray-100: #d7d8db;
 }
+
+
+
+// @media (prefers-color-scheme: light) {
+//     :root {
+//         color-scheme: light; // Inform to browser.
+//         --clr-theme-background: #ffffff;
+//         --clr-theme-dark: #18616d;
+//         --clr-theme-light: #037c8f;
+//         --clr-theme-dark-extra: #055a68;
+//         --clr-theme-text: slategray;
+//         --clr-theme-text-light: gray;
+//         --clr-theme-text-all: #000000;
+//         --clr-theme-icon: #055a68;
+//         --clr-light: 231 77% 90%;
+//         --clr-white: #ffffff;
+//         --clr-theme-card: #ffffff;
+//         --clr-theme-card-hover: #e7e7e9;
+//         --clr-yellow: #f5c32c;
+//         --clr-orange: #fca61f;
+//         --clr-black: #242d49;
+//         --clr-gray: #788097;
+//         --clr-gray-100: #d7d8db;
+//     }
+
+  
+// }
+
+// :root body.dark-theme {
+//     color-scheme: light; // Inform to browser.
+//     --clr-theme-background: #ffffff;
+//     --clr-theme-dark: #18616d;
+//     --clr-theme-light: #037c8f;
+//     --clr-theme-dark-extra: #055a68;
+//     --clr-theme-text: slategray;
+//     --clr-theme-text-light: gray;
+//     --clr-theme-text-all: #000000;
+//     --clr-theme-icon: #055a68;
+//     --clr-light: 231 77% 90%;
+//     --clr-white: #ffffff;
+//     --clr-theme-card: #ffffff;
+//     --clr-theme-card-hover: #e7e7e9;
+//     --clr-yellow: #f5c32c;
+//     --clr-orange: #fca61f;
+//     --clr-black: #242d49;
+//     --clr-gray: #788097;
+//     --clr-gray-100: #d7d8db;
+// }
 
 
 :root {
