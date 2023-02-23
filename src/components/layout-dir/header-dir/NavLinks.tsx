@@ -8,14 +8,14 @@ function NavLinks() {
     return (
         <div className={styles.navLinks} as={Link} to="/">
             <a target="_blank" href={config.socialLinks.youtube}>
-                YouTube
+                <span className='font-theme text-lg'>YouTube</span>
             </a>
              {/*
             <a target="_blank" href={config.socialLinks.medium}>
                 Medium
             </a> */}
-            <Link to="/blog">Blogs</Link>
-            <Link to="/profile" title='Click to see my Profile!'>Author</Link>
+            <Link to="/blog">  <span className='font-theme text-lg'>Blogs</span></Link>
+            <Link to="/profile" title='Click to see my Profile!'>  <span className='font-theme text-lg'>Author</span></Link>
         </div>
     );
 }

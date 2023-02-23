@@ -10,8 +10,7 @@ I'm passionate about <b>Frontend Development, Cloud Engineering, and Microservic
         <div className='flex flex-col justify-center text-center  md:flex-row md:text-left p-4 gap-4'>
             <Avatar className="flex justify-center md:w-3/12"/>
             <div className="md:w-9/12">
-                <h1 className='text-white text-3xl md:text-5xl'>Hi, I'm Praveen Singh</h1>
-                <h2> </h2>
+                <h1 className='font-theme text-white text-3xl md:text-5xl'>Hi, I'm Praveen Singh</h1>
                 <p
                 className='text-gray-100'
                     dangerouslySetInnerHTML={{
