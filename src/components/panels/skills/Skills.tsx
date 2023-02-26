@@ -1,3 +1,4 @@
+import Card from 'components/parts/Card';
 import React from 'react';
 import styled from 'styled-components';
 import { skills } from './data';
@@ -11,9 +12,9 @@ function Skills({variant} : Props) {
         <div className="container">
             <div className={`${variant === 'small'? 'max-w-screen-lg mx-auto': ''} grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 p-3`}>
                 {skills.map(({ id, type, icon, info }) => (
-                    <div
+                    <Card
                         key={id}
-                        className="bg-white rounded-md px-6 py-4 border border-gray-200 border-solid flex flex-col justify- items-center text-center"
+                        className="bg-white rounded-md px-6 py-4 flex flex-col justify- items-center text-center"
                     >
                         <div className={`mb-4 grid place-content-center ${variant === 'small'? 'w-36 h-36': 'w-48 h-48'} `}>
                             <img className="object-fill" src={`/images/${icon}`} alt="React Logo" />
@@ -22,7 +23,7 @@ function Skills({variant} : Props) {
                             <h1 className="text-sm uppercase my-0 text-theme-500">{type}</h1>
                             <small className="text-xs text-slate-500">{info}</small>
                         </div>
-                    </div>
+                    </Card>
                 ))}
             </div>
         </div>

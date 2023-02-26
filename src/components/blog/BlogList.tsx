@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import Tag from 'components/parts/Tag/Tag';
 import AppContainer from 'components/layout-dir/AppContainer';
+import Card from 'components/parts/Card';
 
 function BlogList({ data }) {
     return (
@@ -10,9 +11,9 @@ function BlogList({ data }) {
                 const { title, description, date, slug, keys } = node.frontmatter;
 
                 return (
-                    <div
+                    <Card
                         key={node.id}
-                        className="flex flex-col justify-between bg-white rounded-md px-6 py-4 border border-gray-200 border-solid"
+                        className="flex flex-col justify-between "
                     >
                         <div>
                             <Link to={`/blog/${slug}`}>
@@ -28,7 +29,7 @@ function BlogList({ data }) {
                                 <Tag key={item} text={item.trim()} />
                             ))}
                         </div>
-                    </div>
+                    </Card>
                 );
             })}
         </AppContainer>

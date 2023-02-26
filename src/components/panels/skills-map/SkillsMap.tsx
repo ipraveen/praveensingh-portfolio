@@ -22,7 +22,7 @@ const SkillMap = () => {
                                             <img src={`/images/skills/${image}`} alt={label}/>
                                         </div>
                                     </GlowingRadialFrame>
-                                    <b>{label}</b>
+                                    <span>{label}</span>
                                 </div>
                             ))}
                         </div>

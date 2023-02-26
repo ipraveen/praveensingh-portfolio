@@ -10,7 +10,7 @@ const Education = () => (
                     <div className={styles.item} style={{ backgroundColor: `${color}4a`, animationDelay: `${index}s` }}>
                         <img alt={alt} src={`/images/exp/${img}`} title={alt} />
                     </div>
-                    <h1 className='text-theme-500 text-sm'>{alt}</h1>
+                    <span className='text-theme-500 font-semibold text-sm'>{alt}</span>
                 </div>
             ))}
         </div>
