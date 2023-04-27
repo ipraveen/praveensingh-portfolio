@@ -18,11 +18,11 @@ function BlogProvider({ children, frontmatter, tableOfContents }) {
                 <BlogPage className="col-span-12 lg:col-span-9">{children}</BlogPage>
                 <TableOfContents className="hidden lg:block md:col-span-3" items={tableOfContents.items} />
             </div>
-            <div className="mx-auto max-w-screen-xl flex gap-2 mb-0">
+            {/* <div className="mx-auto max-w-screen-xl flex gap-2 mb-0">
                     {keys.split(',').map((key) => (
                         <Tag variant = "large" key={key} text={key.trim()} />
                     ))}
-                </div>
+                </div> */}
         </MDXProvider>
     );
 }

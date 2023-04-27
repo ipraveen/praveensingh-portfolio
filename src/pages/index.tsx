@@ -22,6 +22,7 @@ export const query = graphql`
                     description
                     slug
                     keys
+                    group
                 }
                 id
                 excerpt

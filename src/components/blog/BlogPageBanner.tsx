@@ -2,14 +2,14 @@
 import React from 'react';
 
 function BlogPageBanner({ frontmatter }) {
-    const { title, date } = frontmatter;
+    const { title, date, group } = frontmatter;
     return (
-        <div className="max-w-screen-xl mx-auto py-2 border-0 border-solid border-b-2 border-theme-200 mb-12">
-            <div className="flex justify-between">
-                <small className="text-gray-600">{date}</small>
-            </div>
+        <div className="max-w-screen-xl mx-auto py-2 border-0 border-solid border-b-0 border-theme-200 mb-12">
 
             <h1 className="text-theme-800 text-2xl md:text-4xl lg:text-5xl my-4">{title}</h1>
+            <div className="flex justify-between">
+                <small className="text-gray-600">{date} | {group}</small>
+            </div>
         </div>
     );
 }

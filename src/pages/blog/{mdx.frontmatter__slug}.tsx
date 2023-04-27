@@ -25,6 +25,7 @@ export const query = graphql`
                 banner
                 description
                 keys
+                group
             }
             tableOfContents
         }

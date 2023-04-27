@@ -7,14 +7,30 @@ export const BlogPage = styled.article`
 
     h1 {
         margin: 48px 0 24px;
-        font: normal 700 26px/40px AkkuratPro, Arial, sans-serif;
-        color: #2b2d38;
+        color: #14282e;
+        font-size: 1.6rem;
+        font-weight: 600;
     }
 
     h2 {
         margin: 40px 0 20px;
-        font: normal 700 22px/40px AkkuratPro, Arial, sans-serif;
         color: #2b2d38;
+        font-size: 1.4rem;
+        font-weight: 500;
+    }
+
+    strong{
+        font-weight: 700; 
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.8rem;
+    }
+
+    li{
+        line-height: 2rem;
     }
 `;
 
