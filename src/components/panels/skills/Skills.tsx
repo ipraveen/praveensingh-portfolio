@@ -1,6 +1,5 @@
 import Card from 'components/parts/Card';
 import React from 'react';
-import styled from 'styled-components';
 import { skills } from './data';
 
 interface Props{
