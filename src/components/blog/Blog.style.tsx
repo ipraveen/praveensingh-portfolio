@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const BlogPage = styled.article`
+
     iframe {
         margin: 1rem auto;
     }
@@ -10,6 +11,10 @@ export const BlogPage = styled.article`
         color: #14282e;
         font-size: 1.6rem;
         font-weight: 600;
+
+        .dark &{
+            color: white;
+        }
     }
 
     h2 {
@@ -17,10 +22,16 @@ export const BlogPage = styled.article`
         color: #2b2d38;
         font-size: 1.4rem;
         font-weight: 500;
+        .dark &{
+            color: white;
+        }
     }
 
     strong{
         font-weight: 700; 
+        .dark &{
+            color: white;
+        }
     }
 
     p {
@@ -32,14 +43,10 @@ export const BlogPage = styled.article`
     li{
         line-height: 2rem;
     }
+
+    pre{
+        background-color: #0f172a;
+        border-radius: .8rem;
+    }
 `;
 
-export const BlogContainer = styled.div`
-    /* grid-gap: 3rem;
-    display: grid;
-    gap: 3rem;
-    grid-template-areas: 'main toc';
-    grid-template-columns: minmax(0, 18rem) minmax(0, 50rem) minmax(0, 22rem);
-    padding-left: 1rem;
-    padding-right: 1rem; */
-`;

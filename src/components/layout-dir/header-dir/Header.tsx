@@ -19,6 +19,7 @@ padding: 0 1rem;
                       var(--clr-theme-dark) 100%
                   );
               `}
+
 `;
 
 function Header({ transparent }) {

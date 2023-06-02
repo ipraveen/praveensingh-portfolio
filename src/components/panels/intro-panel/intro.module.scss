@@ -26,12 +26,17 @@
     height: 8vw;
     margin-top: 0;
     padding-top: 0;
-    background-image: url(assets/images/waves-bottom.svg);
+    
     background-position: 50% 100%;
     background-size: cover;
     background-repeat: no-repeat;
 
-    // @media (prefers-color-scheme: dark) {
-    //     background-image: url(assets/images/waves-bottom-dark.svg);
-    // }
+    background-image: url(assets/images/waves-bottom.svg);
+
+    
+}
+
+
+.dark .wave{
+    background-image: url(assets/images/waves-bottom-dark.svg);
 }

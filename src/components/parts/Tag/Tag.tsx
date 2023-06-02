@@ -22,7 +22,7 @@ interface Props{
 
 function Tag({ text, variant = 'small' }: Props) {
     return (
-        <Container variant={variant} className="uppercase grid place-content-center">{text}</Container>
+        <Container variant={variant} className="dark:bg-slate-600 dark:text-slate-200 uppercase grid place-content-center">{text}</Container>
     );
 }
 

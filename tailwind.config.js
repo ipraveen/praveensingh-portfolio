@@ -6,6 +6,7 @@ module.exports = {
         './src/apps/**/*.{js,jsx,ts,tsx}',
         './src/components/**/*.{js,jsx,ts,tsx}',
     ],
+    darkMode: 'class',
     theme: {
         screens: {
             sm: '480px',
@@ -38,7 +39,6 @@ module.exports = {
                 'theme-100': '#f1f5f9',
                 'theme-50': '#f8fafc',
                 'banner-800': '#445d6e',
-                selection: 'bg-orange-100',
             },
         },
     },

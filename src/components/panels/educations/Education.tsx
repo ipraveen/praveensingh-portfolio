@@ -1,6 +1,7 @@
 import React from 'react';
 import bits from 'assets/images/exp/bits.png';
 import jiit from 'assets/images/exp/jiit.png';
+import Card from 'components/parts/Card';
 
 const list = [
     {
@@ -21,15 +22,15 @@ const list = [
 
 const Education = () => {
     return (
-        <div className=" grid grid-cols-1 sm:grid-cols-2 max-w-screen-lg mx-auto">
+        <div className=" grid grid-cols-1 gap-4 sm:grid-cols-2 max-w-screen-lg mx-auto">
             {list.map(({ degree, branch, image, college, duration }) => (
-                <section key={degree} className="card flex flex-col justify-center items-center text-center">
+                <Card key={degree} className=" flex flex-col justify-center items-center text-center">
                     <h1 className='my-0 text-2xl text-theme-800'>{degree}</h1>
                     <h2 className='my-0 text-xl text-theme-500'>{branch}</h2>
                     <img className='my-8' src={image} alt="bits"></img>
                     <h4 className='my-0 text-base text-theme-600'>{college}</h4>
                     <h3 className='my-0 text-base text-theme-500'>{duration}</h3>
-                </section>
+                </Card>
             ))}
         </div>
     );

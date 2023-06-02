@@ -14,26 +14,3 @@
     border: 1px solid var(--orange);
     color: var(--orange);
 }
-
-:global {
-    .card {
-        background-color: var(--clr-theme-card);
-        border-radius: 0.5rem;
-        box-shadow: 0 1px 5px rgb(15 31 44 / 25%);
-        padding: 20px;
-        margin: 10px;
-        color: var(--clr-theme-icon);
-        transition: transform 0.2s ease-in;
-
-        &:hover {
-            box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
-
-            background-color: var(--clr-theme-card-hover);
-            transition: background-color 0.5s;
-        }
-
-        @media only screen and (min-device-width: 375px) and (max-device-width: 812px) {
-            padding: 10px;
-        }
-    }
-}

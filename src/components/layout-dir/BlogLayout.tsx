@@ -6,7 +6,7 @@ const BlogLayout = ({ children, showHeader = true }) => {
     return (
         <div>
             {showHeader && <Header />}
-            <div className="p-4">{children}</div>
+            <div className="p-4 dark:bg-slate-800">{children}</div>
             <Footer />
         </div>
     );

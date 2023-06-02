@@ -5,7 +5,7 @@ import GlowingRadialFrame from 'components/frames/glowing-radial/GlowingRadialFr
 
 const SkillMap = () => {
     return (
-        <div className="container">
+        <div className="container pt-8">
             <div className={styles.container}>
                 {groups.map(({ name, skills }) => (
                     <>
@@ -22,7 +22,7 @@ const SkillMap = () => {
                                             <img src={`/images/skills/${image}`} alt={label}/>
                                         </div>
                                     </GlowingRadialFrame>
-                                    <span>{label}</span>
+                                    <span className='dark:text-slate-400'>{label}</span>
                                 </div>
                             ))}
                         </div>

@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import Avatar from 'components/panels/avatar/Avatar';
 import SocialList from 'components/common/social/SocialList';
 
@@ -10,9 +9,9 @@ I'm passionate about <b>Frontend Development, Cloud Engineering, and Microservic
         <div className='flex flex-col justify-center text-center  md:flex-row md:text-left p-4 gap-4'>
             <Avatar className="flex justify-center md:w-3/12"/>
             <div className="md:w-9/12">
-                <h1 className='font-theme text-white text-3xl md:text-5xl'>Hi, I'm Praveen Singh</h1>
+                <h1 className='font-theme text-white dark:text-slate-200 text-3xl md:text-5xl'>Hi, I'm Praveen Singh</h1>
                 <p
-                className='text-gray-100'
+                className='text-slate-300 dark:text-slate-400'
                     dangerouslySetInnerHTML={{
                         __html: text,
                     }}

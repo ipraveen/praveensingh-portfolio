@@ -48,7 +48,7 @@ function renderItems(items) {
                     <li key={item.url}>
                         <a
                             href={item.url}
-                            className={hash === item.url ? 'text-slate-800 font-semibold' : 'text-slate-500'}
+                            className={hash === item.url ? 'text-slate-800 dark:text-slate-200 font-semibold' : 'text-slate-500 dark:text-slate-400'}
                         >
                             {item.title}
                         </a>
