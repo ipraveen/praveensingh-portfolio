@@ -46,7 +46,8 @@ export const BlogPage = styled.article`
 
     pre{
         background-color: #0f172a;
-        border-radius: .8rem;
+        border-radius: .6rem;
+        font-size: .8rem;;
     }
 `;
 
