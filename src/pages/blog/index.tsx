@@ -22,6 +22,16 @@ export const query = graphql`
                     description
                     slug
                     keys
+                    cardImage{
+                        childImageSharp {
+                            gatsbyImageData
+                        } 
+                    }
+                    heroImage {
+                        childImageSharp {
+                            gatsbyImageData
+                        }
+                    }
                 }
                 id
                 excerpt

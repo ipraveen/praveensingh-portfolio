@@ -1565,9 +1565,11 @@ type MdxFilterListInput = {
 
 type MdxFrontmatter = {
   readonly banner: Maybe<Scalars['Int']>;
+  readonly cardImage: Maybe<File>;
   readonly date: Maybe<Scalars['Date']>;
   readonly description: Maybe<Scalars['String']>;
   readonly group: Maybe<Scalars['String']>;
+  readonly heroImage: Maybe<File>;
   readonly keys: Maybe<Scalars['String']>;
   readonly slug: Maybe<Scalars['String']>;
   readonly title: Maybe<Scalars['String']>;
@@ -1583,9 +1585,11 @@ type MdxFrontmatter_dateArgs = {
 
 type MdxFrontmatterFieldSelector = {
   readonly banner: InputMaybe<FieldSelectorEnum>;
+  readonly cardImage: InputMaybe<FileFieldSelector>;
   readonly date: InputMaybe<FieldSelectorEnum>;
   readonly description: InputMaybe<FieldSelectorEnum>;
   readonly group: InputMaybe<FieldSelectorEnum>;
+  readonly heroImage: InputMaybe<FileFieldSelector>;
   readonly keys: InputMaybe<FieldSelectorEnum>;
   readonly slug: InputMaybe<FieldSelectorEnum>;
   readonly title: InputMaybe<FieldSelectorEnum>;
@@ -1593,9 +1597,11 @@ type MdxFrontmatterFieldSelector = {
 
 type MdxFrontmatterFilterInput = {
   readonly banner: InputMaybe<IntQueryOperatorInput>;
+  readonly cardImage: InputMaybe<FileFilterInput>;
   readonly date: InputMaybe<DateQueryOperatorInput>;
   readonly description: InputMaybe<StringQueryOperatorInput>;
   readonly group: InputMaybe<StringQueryOperatorInput>;
+  readonly heroImage: InputMaybe<FileFilterInput>;
   readonly keys: InputMaybe<StringQueryOperatorInput>;
   readonly slug: InputMaybe<StringQueryOperatorInput>;
   readonly title: InputMaybe<StringQueryOperatorInput>;
@@ -1603,9 +1609,11 @@ type MdxFrontmatterFilterInput = {
 
 type MdxFrontmatterSortInput = {
   readonly banner: InputMaybe<SortOrderEnum>;
+  readonly cardImage: InputMaybe<FileSortInput>;
   readonly date: InputMaybe<SortOrderEnum>;
   readonly description: InputMaybe<SortOrderEnum>;
   readonly group: InputMaybe<SortOrderEnum>;
+  readonly heroImage: InputMaybe<FileSortInput>;
   readonly keys: InputMaybe<SortOrderEnum>;
   readonly slug: InputMaybe<SortOrderEnum>;
   readonly title: InputMaybe<SortOrderEnum>;

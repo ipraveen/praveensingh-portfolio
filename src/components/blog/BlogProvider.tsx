@@ -6,16 +6,24 @@ import { Message } from 'theme-ui';
 import { BlogPage } from './Blog.style';
 import BlogPageBanner from './BlogPageBanner';
 import TableOfContents from './TableOfContents';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 
 const components = { YoutubePlayer, Message };
 
 function BlogProvider({ children, frontmatter, tableOfContents }) {
-    const {  keys } = frontmatter;
+    const {  keys, heroImage, title } = frontmatter;
+    const image = getImage(heroImage);
+
     return (
         <MDXProvider components={components}>
             <BlogPageBanner frontmatter={frontmatter} />
             <div className="grid grid-cols-12 mx-auto max-w-screen-xl gap-2">
-                <BlogPage className="col-span-12 lg:col-span-9 dark:text-slate-300">{children}</BlogPage>
+                <BlogPage className="col-span-12 lg:col-span-9 dark:text-slate-300">
+                <GatsbyImage image={image} alt={title} />
+                    
+                    {children}
+                    
+                    </BlogPage>
                 <TableOfContents className="hidden lg:block md:col-span-3 ml-8" items={tableOfContents.items} />
             </div>
             {/* <div className="mx-auto max-w-screen-xl flex gap-2 mb-0">

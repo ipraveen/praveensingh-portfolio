@@ -19,6 +19,16 @@ export const query = graphql`
                 frontmatter {
                     date(formatString: "MMM DD, YYYY")
                     title
+                    cardImage{
+                        childImageSharp {
+                            gatsbyImageData
+                        } 
+                    }
+                    heroImage {
+                        childImageSharp {
+                            gatsbyImageData
+                        }
+                    }
                     description
                     slug
                     keys

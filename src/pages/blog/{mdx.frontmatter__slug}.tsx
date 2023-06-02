@@ -5,6 +5,7 @@ import { graphql } from 'gatsby';
 import Seo from '../../components/SEO';
 import BlogProvider from '../../components/blog/BlogProvider';
 
+
 const BlogPost = ({ data, children }) => {
     const { frontmatter, tableOfContents } = data.mdx;
     return (
@@ -26,6 +27,16 @@ export const query = graphql`
                 description
                 keys
                 group
+                cardImage{
+                    childImageSharp {
+                        gatsbyImageData
+                    } 
+                }
+                heroImage {
+                    childImageSharp {
+                        gatsbyImageData
+                    }
+                }
             }
             tableOfContents
         }
