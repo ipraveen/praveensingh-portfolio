@@ -11,7 +11,7 @@
         "serve": "gatsby serve",
         "clean": "gatsby clean",
         "typecheck": "tsc --noEmit",
-        "clean:install": "npm cache clean -f && rm -rf node_modules/ && npm install"
+        "clean:install": "npm cache clean -f && rm -rf node_modules/ && yarn install"
     },
     "engines": {
         "node": ">=18"

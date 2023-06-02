@@ -27,11 +27,6 @@ export const query = graphql`
                             gatsbyImageData
                         } 
                     }
-                    heroImage {
-                        childImageSharp {
-                            gatsbyImageData
-                        }
-                    }
                 }
                 id
                 excerpt

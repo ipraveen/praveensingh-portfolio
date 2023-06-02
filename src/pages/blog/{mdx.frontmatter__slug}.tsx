@@ -27,11 +27,6 @@ export const query = graphql`
                 description
                 keys
                 group
-                cardImage{
-                    childImageSharp {
-                        gatsbyImageData
-                    } 
-                }
                 heroImage {
                     childImageSharp {
                         gatsbyImageData

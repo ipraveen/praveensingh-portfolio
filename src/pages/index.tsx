@@ -24,11 +24,6 @@ export const query = graphql`
                             gatsbyImageData
                         } 
                     }
-                    heroImage {
-                        childImageSharp {
-                            gatsbyImageData
-                        }
-                    }
                     description
                     slug
                     keys
