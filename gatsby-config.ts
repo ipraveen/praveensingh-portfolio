@@ -1,13 +1,12 @@
 import type { GatsbyConfig } from 'gatsby';
-import path from "path";
+import path from 'path';
 
 const config = {
     defaultTitle: 'praveensingh.net',
     defaultDescription: `I'm a <b>Full Stack Engineer</b> with a passion for Frontend Development and large-scale System Design. I have been developing highly scalable, data-driven web applications for <b>15+</b> years and have led multiple full-size development teams as a Tech Lead.`,
     author: 'Praveen Singh',
     url: 'https://praveensingh.net/',
-}
-
+};
 
 const gatsbyConfig: GatsbyConfig = {
     siteMetadata: {
@@ -22,7 +21,24 @@ const gatsbyConfig: GatsbyConfig = {
     // Learn more at: https://gatsby.dev/graphql-typegen
     graphqlTypegen: true,
     plugins: [
-        `gatsby-plugin-sharp`,
+        `gatsby-plugin-image`,
+        {
+            resolve: `gatsby-plugin-sharp`,
+            options: {
+                defaults: {
+                    formats: [`auto`, `webp`],
+                    placeholder: `dominantColor`,
+                    quality: 50,
+                    breakpoints: [750, 1080, 1366, 1920],
+                    backgroundColor: `transparent`,
+                    blurredOptions: {},
+                    jpgOptions: {},
+                    pngOptions: {},
+                    webpOptions: {},
+                    avifOptions: {},
+                },
+            },
+        },
         `gatsby-transformer-sharp`,
         'gatsby-plugin-sass',
         'gatsby-plugin-sitemap',

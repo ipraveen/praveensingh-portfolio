@@ -10,7 +10,6 @@ function BlogList({ data }) {
         <AppContainer className="grid grid-cols-1 md:grid-cols-2 gap-4 p-2">
             {data.allMdx.nodes.map((node) => {
                 const { title, description, date, slug, keys, cardImage } = node.frontmatter;
-                const image = getImage(cardImage);
 
                 return (
                     <Card key={node.id} className="flex flex-col justify-between">
@@ -19,9 +18,9 @@ function BlogList({ data }) {
                                 <h1 className="text-xl font-semibold text-slate-900 dark:text-white my-0"> {title}</h1>
                             </Link>
 
-                            <div className="grid grid-flow-col gap-4 mt-6">
-                                <div className="grid-cols-2">
-                                    <GatsbyImage image={image} alt={title} />
+                            <div className="grid grid-flow-col gap-4 mt-6 items-center">
+                                <div className="grid-cols-2 w-36 h-24">
+                                    <GatsbyImage image={getImage(cardImage)} alt={title} />
                                 </div>
 
                                 <div className="grid-10">

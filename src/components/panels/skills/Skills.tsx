@@ -3,6 +3,7 @@ import React from 'react';
 import { skills } from './data';
 import styled from '@emotion/styled';
 
+
 interface Props {
     variant: 'small' | 'large';
 }
@@ -24,11 +25,11 @@ function Skills({ variant }: Props) {
                 {skills.map(({ id, type, icon, info }) => (
                     <Card key={id} className="rounded-md px-6 py-4 flex flex-col justify- items-center text-center">
                         <div
-                            className={`mb-4 grid place-content-center ${
-                                variant === 'small' ? 'w-36 h-36' : 'w-48 h-48'
+                            className={`mb-8 grid place-content-center ${
+                                variant === 'small' ? 'w-36 h-24' : 'w-48 h-48'
                             } `}
                         >
-                            <Image className="object-fill" src={`/images/${icon}`} alt="React Logo" />
+                           {icon}
                         </div>
                         <div>
                             <h1 className="text-sm uppercase my-0 text-slate-900 dark:text-white">{type}</h1>
