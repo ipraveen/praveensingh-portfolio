@@ -22,13 +22,13 @@ const gatsbyConfig: GatsbyConfig = {
     // Learn more at: https://gatsby.dev/graphql-typegen
     graphqlTypegen: true,
     plugins: [
+        `gatsby-plugin-sharp`,
+        `gatsby-transformer-sharp`,
         'gatsby-plugin-sass',
         'gatsby-plugin-sitemap',
         `gatsby-plugin-theme-ui`,
         `gatsby-plugin-styled-components`,
-        `gatsby-plugin-sharp`,
         'gatsby-plugin-material-ui',
-        `gatsby-transformer-sharp`,
         `gatsby-transformer-remark`,
         'gatsby-plugin-postcss',
         {

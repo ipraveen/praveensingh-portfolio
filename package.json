@@ -7,11 +7,11 @@
     "scripts": {
         "start": "gatsby develop",
         "develop": "gatsby develop",
-        "build": "gatsby build",
+        "build": "yarn cache clean; gatsby clean ; gatsby build",
         "serve": "gatsby serve",
         "clean": "gatsby clean",
         "typecheck": "tsc --noEmit",
-        "clean:install": "npm cache clean -f && rm -rf node_modules/ && yarn install"
+        "clean:install": "yarn cache clean && rm -rf node_modules && rm -rf public && yarn install"
     },
     "engines": {
         "node": ">=18"
