@@ -5,7 +5,7 @@ import AppContainer from 'components/layout-dir/AppContainer';
 
 const SkillMap = () => {
     return (
-        <AppContainer className="grid grid-cols-2 md:grid-cols-3 mx-auto gap-4">
+        <AppContainer className="grid grid-cols-2 md:grid-cols-3 mx-auto gap-4 max-w-sm sm:max-w-lg md:max-w-xl">
             {groups.map(({ skills }) =>
                 skills.map(({ label, icon, color = '#3c77c9' }, index) => (
                     <div className="flex flex-col justify-center items-center">
