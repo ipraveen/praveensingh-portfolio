@@ -1,35 +1,27 @@
 import React from 'react';
-import * as styles from './skills-map.module.scss';
 import { groups } from './data';
 import GlowingRadialFrame from 'components/frames/glowing-radial/GlowingRadialFrame';
+import AppContainer from 'components/layout-dir/AppContainer';
 
 const SkillMap = () => {
     return (
-        <div className="container pt-8">
-            <div className={styles.container}>
-                {groups.map(({ name, skills }) => (
-                    <>
-                        <div className={styles.group}>
-                            {skills.map(({ label, image, color = '#3c77c9' }, index) => (
-                                <div className={styles.item}>
-                                    <GlowingRadialFrame
-                                        radius={55}
-                                        color={color}
-                                        strokeWidth="6"
-                                        strokeDashArray="1,16"
-                                    >
-                                        <div className={styles.itemImage} style={{ backgroundColor: `${color}33` }}>
-                                            <img src={`/images/skills/${image}`} alt={label}/>
-                                        </div>
-                                    </GlowingRadialFrame>
-                                    <span className='dark:text-slate-400'>{label}</span>
-                                </div>
-                            ))}
-                        </div>
-                    </>
-                ))}
-            </div>
-        </div>
+        <AppContainer className="grid grid-cols-2 md:grid-cols-3 mx-auto gap-4">
+            {groups.map(({ skills }) =>
+                skills.map(({ label, icon, color = '#3c77c9' }, index) => (
+                    <div className="flex flex-col justify-center items-center">
+                        <GlowingRadialFrame radius={55} color={color} strokeWidth="6" strokeDashArray="1,16">
+                            <div
+                                className="grid place-content-center w-20 h-20 rounded-full"
+                                style={{ backgroundColor: `${color}33` }}
+                            >
+                                {icon}
+                            </div>
+                        </GlowingRadialFrame>
+                        <span className="text-slate-600 dark:text-slate-400">{label}</span>
+                    </div>
+                ))
+            )}
+        </AppContainer>
     );
 };
 

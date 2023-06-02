@@ -1,43 +1,42 @@
+import { StaticImage } from 'gatsby-plugin-image';
+import React from 'react';
+
+const className = 'rounded-full h-10 w-10';
+
 export const groups = [
     {
         name: 'Frontend Skills',
         skills: [
             {
                 label: 'JavaScript',
-                image: 'js.jpg',
+                icon: <StaticImage src="../../../assets/images/skills/js.svg" className={className} alt="" />,
                 color: '#d4bc45',
             },
             {
                 label: 'React',
-                image: 'react.svg',
+                icon: <StaticImage src="../../../assets/images/skills/react.svg" className="h-12 w-14" alt="" />,
                 color: '#62dafb',
             },
             {
                 label: 'TypeScript',
-                image: 'ts.png',
+                icon: <StaticImage src="../../../assets/images/skills/typescript.svg" className={className} alt="" />,
                 color: '#2e78c7',
             },
-            // {
-            //     label: 'Redux',
-            //     image: 'redux.png',
-            //     color: '#7749bd',
-            // },
-
-            // {
-            //     label: 'Figma',
-            //     image: 'figma.png',
-            //     color: '#ff4c13',
-            // },
-            // {
-            //     label: 'CSS',
-            //     image: 'css.svg',
-            //     color: '#0370bc',
-            // },
-            // {
-            //     label: 'HTML',
-            //     image: 'html.png',
-            //     color: '#e46546',
-            // },
+            {
+                label: 'Redux & RTK',
+                icon: <StaticImage src="../../../assets/images/skills/redux.svg" className="h-12 w-12" alt="" />,
+                color: '#7749bd',
+            },
+            {
+                label: 'Jest',
+                icon: <StaticImage src="../../../assets/images/skills/jest.svg" className={className} alt="" />,
+                color: '#C44218',
+            },
+            {
+                label: 'Cypress',
+                icon: <StaticImage src="../../../assets/images/skills/cypress.svg" className={className} alt="" />,
+                color: '#44A08E',
+            },
         ],
     },
     {
@@ -45,17 +44,17 @@ export const groups = [
         skills: [
             {
                 label: 'Spring',
-                image: 'spring.png',
+                icon: <StaticImage src="../../../assets/images/skills/spring.svg" className={className} alt="" />,
                 color: '#63ba35',
             },
             {
                 label: 'Java',
-                image: 'java.png',
+                icon: <StaticImage src="../../../assets/images/skills/java.svg" className={className} alt="" />,
                 color: '#5482a1',
             },
             {
                 label: 'NodeJs',
-                image: 'nodejs.png',
+                icon: <StaticImage src="../../../assets/images/skills/nodejs.svg" className="h-8 w-14" alt="" />,
                 color: '#599550',
             },
         ],
@@ -65,16 +64,17 @@ export const groups = [
         skills: [
             {
                 label: 'AWS',
-                image: 'aws.png',
+                icon: <StaticImage src="../../../assets/images/skills/aws.svg" className="h-8 w-14" alt="" />,
                 color: '#ff9a00',
             },
             {
                 label: 'Kubernetes',
-                image: 'kubernetes.svg',
+                icon: <StaticImage src="../../../assets/images/skills/kubernetes.svg" className={className} alt="" />,
                 color: '#326ce4',
-            }, {
+            },
+            {
                 label: 'Docker',
-                image: 'docker.png',
+                icon: <StaticImage src="../../../assets/images/skills/docker.png" className={className} alt="" />,
                 color: '#5482a1',
             },
         ],

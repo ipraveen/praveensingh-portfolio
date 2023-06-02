@@ -76,6 +76,10 @@ video,
 iframe {
     .dark & {
         filter: brightness(0.7);
+
+        &:hover{
+            filter: brightness(1.1);
+        }
     }
 }
 
