@@ -87,6 +87,7 @@ const gatsbyConfig: GatsbyConfig = {
                 config: path.join(__dirname, 'src/config'),
             },
         },
+        `gatsby-plugin-offline`
     ],
 };
 
