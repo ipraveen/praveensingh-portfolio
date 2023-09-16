@@ -5,8 +5,12 @@ export const BlogPage = styled.article`
         margin: 1rem auto;
     }
 
+    h1:first-child{
+        margin-top: 0;
+    }
+
     h1 {
-        margin: 48px 0 24px;
+        margin: 32px 0;
         color: #14282e;
         font-size: 1.6rem;
         font-weight: 600;
@@ -19,7 +23,7 @@ export const BlogPage = styled.article`
     h2 {
         margin: 40px 0 20px;
         color: #2b2d38;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         font-weight: 500;
         .dark & {
             color: white;
@@ -33,14 +37,33 @@ export const BlogPage = styled.article`
         }
     }
 
-    p {
+    p, ul, li{
+        color: rgb(83, 82, 82);
+        line-height: 1.5;
         font-weight: 400;
         font-size: 1rem;
-        line-height: 1.8rem;
+        margin: 1rem 0;
+    }
+
+    ul, ol{
+        margin: 1rem 0;
+        margin-left: 2rem;
+    }
+
+    ul{
+        list-style-type: disc;
+    }
+
+    ol{
+        list-style-type: auto;
     }
 
     li {
-        line-height: 2rem;
+        line-height: 1.2rem;
+
+        strong, b{
+            color: black;
+        }
     }
 
     pre {

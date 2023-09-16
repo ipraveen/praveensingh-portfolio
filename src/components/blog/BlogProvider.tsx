@@ -19,10 +19,7 @@ function BlogProvider({ children, frontmatter, tableOfContents }) {
             <BlogPageBanner frontmatter={frontmatter} />
             <div className="grid grid-cols-12 mx-auto max-w-screen-xl gap-2">
                 <BlogPage className="col-span-12 lg:col-span-9 dark:text-slate-300">
-                <GatsbyImage image={image} alt={title} />
-                    
                     {children}
-                    
                     </BlogPage>
                 <TableOfContents className="hidden lg:block md:col-span-3 ml-8" items={tableOfContents.items} />
             </div>
