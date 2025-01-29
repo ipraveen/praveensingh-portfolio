@@ -43,7 +43,7 @@ function renderItems(items) {
     const hash = typeof window !== 'undefined' && window.location.hash;
     return (
         <ol className="list-none text-sm text-slate-500">
-            {items.map((item) => {
+            {Array.isArray(items) && items.map((item) => {
                 return (
                     <li key={item.url}>
                         <a

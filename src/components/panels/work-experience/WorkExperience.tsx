@@ -1,8 +1,11 @@
 import React from 'react';
 import * as styles from './workExperience.module.scss';
 import { data } from './data';
+import SectionTitle from 'components/parts/SectionTitile';
 
 const WorkExperience = () => (
+    <section>
+    <SectionTitle>Professional Experience</SectionTitle>
     <div className="container pt-8">
         <div className={styles.items}>
             {data.map(({ img, color, alt }, index) => (
@@ -15,6 +18,9 @@ const WorkExperience = () => (
             ))}
         </div>
     </div>
+</section>
+
+  
 );
 
 export default WorkExperience;

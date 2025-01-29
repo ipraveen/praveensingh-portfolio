@@ -12,30 +12,27 @@ function ProfilePage({ data }) {
     return (
         <div>
             <IntroPanel mode="sm">
-                <HomePageIntro text={`I'm a <b>Full Stack Engineer</b>, love solving complex engineering problems, and enjoy exploring the system design of large enterprise applications. 
-                            I'm passionate about <b>Frontend Development, Cloud Engineering, and Microservices.</b> <br/> <br/>I've around <b>16+</b> years of Industry experience in developing and designing scalable enterprise applications and the privilege to work for a few best companies in the Industry, like <b>Twilio, Intuit, Canva, and Nokia.</b>`}/>
+                <HomePageIntro
+                    text={`I'm a <b>Full Stack Engineer</b>, love solving complex engineering problems, and enjoy exploring the system design of large enterprise applications. 
+                            I'm passionate about <b>Frontend Development, Cloud Engineering, and Microservices.</b> <br/> <br/>I've around <b>16+</b> years of Industry experience in developing and designing scalable enterprise applications and the privilege to work for a few best companies in the Industry, like <b>Twilio, Intuit, Canva, and Nokia.</b>`}
+                />
             </IntroPanel>
-            <br />
-            <section>
-                <SectionTitle>Skills Summary</SectionTitle>
-                <Skills />
-            </section>
-            <section>
-                <SectionTitle>Professional Experience</SectionTitle>
+            <div className='flex flex-col gap-12'>
+                <section>
+                    <SectionTitle>Skills Summary</SectionTitle>
+                    <Skills />
+                </section>
                 <WorkExperience />
-            </section>
-            <section>
-                <SectionTitle>Technologies Experience</SectionTitle>
                 <SkillsMap />
-            </section>
-            <section>
-                <SectionTitle>Educations</SectionTitle>
-                <Education />
-            </section>
-            <section>
-                <SectionTitle>Certifications</SectionTitle>
-                <Certifications />
-            </section>
+                <section>
+                    <SectionTitle>Educations</SectionTitle>
+                    <Education />
+                </section>
+                <section>
+                    <SectionTitle>Certifications</SectionTitle>
+                    <Certifications />
+                </section>
+            </div>
         </div>
     );
 }
