@@ -11,14 +11,16 @@ function HomePage({ data }) {
             <IntroPanel mode="sm">
                 <HomePageIntro />
             </IntroPanel>
-            <section>
-                <SectionTitle>What I do</SectionTitle>
-                <Skills variant="small"/>
-            </section>
-            <section>
-                <SectionTitle>Blogs</SectionTitle>
-                <BlogList data={data} />
-            </section>
+            <div className="flex flex-col gap-12">
+                <section>
+                    <SectionTitle>What I do</SectionTitle>
+                    <Skills variant="small" />
+                </section>
+                <section>
+                    <SectionTitle>Blogs</SectionTitle>
+                    <BlogList data={data} />
+                </section>
+            </div>
         </div>
     );
 }
