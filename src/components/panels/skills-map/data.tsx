@@ -75,6 +75,15 @@ export const skills: Skill[] = [
         color: '#7749bd',
       
     },
+
+      {
+        label: 'tailwindcss',
+        icon: <StaticImage src="../../../assets/images/skills/cypress.svg" className={className} alt="" />,
+        color: '#44A08E',
+       
+    },
+
+
     {
         label: 'Jest',
         icon: <StaticImage src="../../../assets/images/skills/jest.svg" className={className} alt="" />,

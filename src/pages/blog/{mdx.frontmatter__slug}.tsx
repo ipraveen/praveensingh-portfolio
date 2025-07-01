@@ -39,7 +39,7 @@ export const query = graphql`
 `;
 
 export const Head = ({ data }) => {
-    return <Seo title={`${data.mdx.frontmatter.title} | Blog`} />;
+    return <Seo title={`${data.mdx.frontmatter.title}`} />;
 };
 
 export default BlogPost;

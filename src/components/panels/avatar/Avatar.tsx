@@ -14,7 +14,7 @@ const Avatar = ({ className, size = 'lg' }) => {
 
             {size === 'lg' && (
                 <div className="mt-4 flex flex-col justify-center items-center">
-                    <small className="text-slate-100 dark:text-slate-300 text-xs">
+                    <small className="text-slate-100 dark:text-slate-300 text-sm">
                         Principal Engineer, Web Development
                     </small>
                     <small className="text-slate-300 dark:text-slate-400 text-xs">

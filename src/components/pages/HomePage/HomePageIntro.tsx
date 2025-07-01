@@ -3,8 +3,10 @@ import Avatar from 'components/panels/avatar/Avatar';
 import SocialList from 'components/common/social/SocialList';
 
 
-function HomePageIntro({text = `I'm a <b>Full Stack Engineer</b>, love solving complex engineering problems, and enjoy exploring the system design of large enterprise applications. 
-I'm passionate about <b>Frontend Development, Cloud Engineering, and Microservices.</b>`}) {
+const defaultIntro = `I'm a <b>Full Stack Engineer</b>, love solving complex engineering problems, and enjoy exploring the system design of large enterprise applications. I'm passionate about <b>Frontend Development, Cloud Engineering, and Microservices.</b>
+`;
+
+function HomePageIntro({text = defaultIntro}) {
     return (
         <div className='flex flex-col justify-center text-center  md:flex-row md:text-left p-4 gap-4'>
             <Avatar className="flex justify-center md:w-3/12"/>
