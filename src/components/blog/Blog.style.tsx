@@ -82,4 +82,13 @@ export const BlogPage = styled.article`
         border-radius: 0.6rem;
         font-size: 0.8rem;
     }
+
+    a {
+        color: #000045;
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+            color: blue;
+        }
+    }
 `;

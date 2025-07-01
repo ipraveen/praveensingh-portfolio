@@ -36,6 +36,6 @@ export const query = graphql`
     }
 `;
 
-export const Head = () => <SEO title="Praveen Singh: full-stack JavaScript Engineer and Web Application Architect" />;
+export const Head = () => <SEO title="Praveen Singh: Full Stack Engineer & Web Application Architect" />;
 
 export default IndexPage;

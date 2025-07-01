@@ -14,7 +14,7 @@ function ProfilePage({ data }) {
             <IntroPanel mode="sm">
                 <HomePageIntro
                     text={`I'm a <b>Full Stack Engineer</b>, love solving complex engineering problems, and enjoy exploring the system design of large enterprise applications. 
-                            I'm passionate about <b>Frontend Development, Cloud Engineering, and Microservices.</b> <br/> <br/>I've around <b>16+</b> years of Industry experience in developing and designing scalable enterprise applications and the privilege to work for a few best companies in the Industry, like <b>Twilio, Intuit, Canva, and Nokia.</b>`}
+                            I'm passionate about <b>Frontend Development, Cloud Engineering, and Microservices.</b> <br/> <br/>I've around <b>18+</b> years of Industry experience in developing and designing scalable enterprise applications and the privilege to work for a few best companies in the Industry, like <b>Twilio, Intuit, Canva, and Nokia.</b>`}
                 />
             </IntroPanel>
             <div className='flex flex-col gap-12'>
